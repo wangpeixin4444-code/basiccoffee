@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡风味入门 · 咖啡科普小站</title>
+    <meta name="description" content="从酸甜苦香到风味轮，一份写给咖啡初学者的风味识别框架。">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍓%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false },
+            theme: { extend: {} }
+        }
+    </script>
+</head>
+<body>
+
+<!-- ========== 顶部导航 ========== -->
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">☕</span>
+            <span>咖啡科普小站</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="processing.html" class="nav-link">处理法</a>
+            <a href="flavor.html" class="nav-link active">风味</a>
+            <a href="varieties.html" class="nav-link">豆种</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== 面包屑 ========== -->
+<div class="breadcrumb">
+    <div class="container">
+        <a href="index.html">首页</a>
+        <span class="sep">›</span>
+        <span>第二章 · 风味</span>
+    </div>
+</div>
+
+<!-- ========== Hero ========== -->
+<header class="sub-hero">
+    <div class="container-narrow">
+        <a href="index.html" class="back-link">← 返回首页</a>
+        <div class="hero-tag">
+            <span>●</span><span>CHAPTER 02 · 风味</span>
+        </div>
+        <h1>喝咖啡时，<br>你到底<span style="color: var(--bean-light);">在尝</span>什么？</h1>
+        <p class="lead">
+            风味不只是"好喝"或"不好喝"。本章把一杯咖啡拆成<strong style="color: var(--bean-dark);">酸 · 甜 · 苦 · 香 · 口感</strong>五个维度，
+            带你建立识别风味的入门框架。
+        </p>
+    </div>
+</header>
+
+<!-- ========== 01 风味由什么组成 ========== -->
+<section class="section">
+    <div class="container-narrow">
+        <div class="section-eyebrow">理解</div>
+        <h2 class="section-title">一杯咖啡里，"风味"由什么构成？</h2>
+
+        <div class="prose">
+            <p>你以为喝到的"味道"主要由舌头完成，<strong>其实大部分信号来自鼻腔</strong>——专业上把一杯咖啡里被感知的整体分为三件事：</p>
+        </div>
+
+        <div class="stats-row" style="margin-top: 40px;">
+            <div class="stat-card" style="border-top: 4px solid #f97316;">
+                <div class="stat-num" style="color: #f97316;">👅</div>
+                <div class="stat-label">味道 · Taste</div>
+                <p style="font-size: 13px; color: var(--bean-mid); margin-top: 8px;">舌头上尝到的基本味：<strong>酸、甜、苦、咸、鲜</strong>。咖啡里前三种最常见。</p>
+            </div>
+            <div class="stat-card" style="border-top: 4px solid #a855f7;">
+                <div class="stat-num" style="color: #a855f7;">👃</div>
+                <div class="stat-label">香气 · Aroma</div>
+                <p style="font-size: 13px; color: var(--bean-mid); margin-top: 8px;">鼻腔嗅到的挥发物分子，从花香到巧克力，是咖啡风味的主要来源。</p>
+            </div>
+            <div class="stat-card" style="border-top: 4px solid #06b6d4;">
+                <div class="stat-num" style="color: #06b6d4;">💧</div>
+                <div class="stat-label">口感 · Mouthfeel</div>
+                <p style="font-size: 13px; color: var(--bean-mid); margin-top: 8px;">液体在嘴里的物理感：厚薄、顺滑、颗粒感、涩感等。</p>
+            </div>
+        </div>
+
+        <div class="info-card mt-12" style="border-left-color: var(--bean-light);">
+            <div class="info-label">💡 关键认知</div>
+            <h4>风味 = 味道 + 香气 + 口感</h4>
+            <p>咖啡里<strong>80% 以上的"风味感知"由香气贡献</strong>，舌头只承担基础味觉。这也是为什么咖啡液温度不同，闻到的味道就完全不一样——温度决定哪些挥发物分子跑得快。</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 02 五大基础味觉 ========== -->
+<section class="section" style="background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">基础</div>
+        <h2 class="section-title">舌头上能尝到的 5 种基础味道</h2>
+        <p class="section-subtitle" style="margin-bottom: 48px;">咖啡里最常见的是酸、甜、苦。咸味和鲜味在咖啡中几乎不期望出现，若明显感受到，往往是品质或萃取的提示。</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+
+            <div class="card" style="padding: 28px; background: linear-gradient(180deg, #fff7ed 0%, white 100%);">
+                <div style="font-size: 40px; margin-bottom: 12px;">🍋</div>
+                <h3 style="color: #c2410c; font-size: 22px; margin-bottom: 8px;">酸</h3>
+                <p style="color: var(--bean-mid); font-size: 14px; line-height: 1.7; margin: 0;">
+                    明亮、活泼，像柑橘或青苹果。适度酸让咖啡更有层次。
+                </p>
+            </div>
+
+            <div class="card" style="padding: 28px; background: linear-gradient(180deg, #fef9c3 0%, white 100%);">
+                <div style="font-size: 40px; margin-bottom: 12px;">🍯</div>
+                <h3 style="color: #a16207; font-size: 22px; margin-bottom: 8px;">甜</h3>
+                <p style="color: var(--bean-mid); font-size: 14px; line-height: 1.7; margin: 0;">
+                    焦糖、蜂蜜、成熟果肉的甜感。好咖啡里常伴随醇厚感。
+                </p>
+            </div>
+
+            <div class="card" style="padding: 28px; background: linear-gradient(180deg, #f5f5f4 0%, white 100%);">
+                <div style="font-size: 40px; margin-bottom: 12px;">🍫</div>
+                <h3 style="color: #44403c; font-size: 22px; margin-bottom: 8px;">苦</h3>
+                <p style="color: var(--bean-mid); font-size: 14px; line-height: 1.7; margin: 0;">
+                    黑巧、烤坚果、香料底韵。深烘豆的苦更醇厚明显。
+                </p>
+            </div>
+
+            <div class="card" style="padding: 28px; background: linear-gradient(180deg, #dcfce7 0%, white 100%);">
+                <div style="font-size: 40px; margin-bottom: 12px;">🌊</div>
+                <h3 style="color: #15803d; font-size: 22px; margin-bottom: 8px;">咸 / 鲜</h3>
+                <p style="color: var(--bean-mid); font-size: 14px; line-height: 1.7; margin: 0;">
+                    专业杯测里<strong>不期望出现</strong>，一旦明显说明萃取或保存可能出问题。
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== 03 SCA 风味轮 ========== -->
+<section class="section">
+    <div class="container-narrow">
+        <div class="section-eyebrow">工具</div>
+        <h2 class="section-title">SCA 风味轮：咖啡行业的"风味地图"</h2>
+
+        <div class="prose">
+            <p>精品咖啡协会（SCA）发布的 <strong>Coffee Taster's Flavor Wheel</strong> 是行业里最通用的"风味地图"。它把所有可能被识别的咖啡风味归到一个分层结构里：<strong>大类 → 中类 → 具体描述</strong>。入门阶段，先记住最外圈的几个大类就够了。</p>
+        </div>
+
+        <!-- 风味轮示意 -->
+        <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 24px; padding: 40px; margin: 40px 0; text-align: center;">
+            <div style="font-size: 12px; letter-spacing: 2px; color: var(--bean-mid); text-transform: uppercase; margin-bottom: 24px;">SCA FLAVOR WHEEL · 简化大类示意</div>
+            <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" style="max-width: 520px; margin: 0 auto; width: 100%;">
+                <circle cx="300" cy="300" r="290" fill="#fff" stroke="#3a2418" stroke-width="2"/>
+
+                <g>
+                    <path d="M 300 300 L 300 10 A 290 290 0 0 1 551 145 Z" fill="#fda4af"/>
+                    <path d="M 300 300 L 551 145 A 290 290 0 0 1 590 300 Z" fill="#fcd34d"/>
+                    <path d="M 300 300 L 590 300 A 290 290 0 0 1 551 455 Z" fill="#fde68a"/>
+                    <path d="M 300 300 L 551 455 A 290 290 0 0 1 300 590 Z" fill="#d6d3d1"/>
+                    <path d="M 300 300 L 300 590 A 290 290 0 0 1 49 455 Z" fill="#fdba74"/>
+                    <path d="M 300 300 L 49 455 A 290 290 0 0 1 10 300 Z" fill="#86efac"/>
+                    <path d="M 300 300 L 10 300 A 290 290 0 0 1 49 145 Z" fill="#c4b5fd"/>
+                    <path d="M 300 300 L 49 145 A 290 290 0 0 1 300 10 Z" fill="#fbcfe8"/>
+                </g>
+
+                <g font-family="PingFang SC, sans-serif" font-weight="700" fill="#3a2418" font-size="18">
+                    <text x="445" y="105" text-anchor="middle">水果</text>
+                    <text x="525" y="220" text-anchor="middle">花香</text>
+                    <text x="525" y="390" text-anchor="middle">甜香</text>
+                    <text x="445" y="505" text-anchor="middle">坚果/可可</text>
+                    <text x="155" y="505" text-anchor="middle">香料</text>
+                    <text x="75" y="390" text-anchor="middle">植物</text>
+                    <text x="75" y="220" text-anchor="middle">烘焙</text>
+                    <text x="155" y="105" text-anchor="middle">其他</text>
+                </g>
+
+                <circle cx="300" cy="300" r="40" fill="#fff" stroke="#3a2418" stroke-width="2"/>
+                <text x="300" y="295" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="13" fill="#3a2418" font-weight="700">COFFEE</text>
+                <text x="300" y="313" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="11" fill="#6b4226">风味轮</text>
+            </svg>
+            <p style="margin-top: 20px; color: var(--bean-mid); font-size: 14px;">
+                入门只需记住 8 大风味家族，不必一开始就被上百种细分词困住。
+            </p>
+        </div>
+
+        <div class="info-pair">
+            <div class="info-card accent-violet">
+                <div class="info-label">怎么用？</div>
+                <h4>三步识别法</h4>
+                <ol style="padding-left: 20px; color: var(--bean-mid); line-height: 1.85; margin: 0;">
+                    <li>先定<strong>家族</strong>：偏水果？偏甜？偏香料？</li>
+                    <li>再选<strong>方向</strong>：柑橘？莓果？坚果？</li>
+                    <li>最后<strong>给出一个词</strong>：柠檬？蜂蜜？巧克力？</li>
+                </ol>
+            </div>
+            <div class="info-card" style="border-left-color: #d946ef;">
+                <div class="info-label">常见误区</div>
+                <h4>不要硬凑词</h4>
+                <p>风味轮<strong>是工具不是束缚</strong>。如果只能说出"花香"或"有点酸"，也完全没问题——诚实比炫技更重要。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 04 六大风味家族 ========== -->
+<section class="section" style="background: var(--cream-dark);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">实战</div>
+        <h2 class="section-title">入门先认识的 6 大风味家族</h2>
+        <p class="section-subtitle" style="margin-bottom: 48px;">不用背下所有细分词，先把常见咖啡归类到这 6 个大家族里， tasting 就有了抓手。</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fbcfe8;">
+                <div style="font-size: 32px; margin-bottom: 10px;">🍊</div>
+                <h3 style="color: #c2410c; font-size: 20px; margin-bottom: 8px;">水果家族</h3>
+                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">咖啡里最常见的"清爽感"来源。</p>
+                <div class="tags">
+                    <span class="tag">柑橘</span>
+                    <span class="tag">莓果</span>
+                    <span class="tag">核果</span>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fcd34d;">
+                <div style="font-size: 32px; margin-bottom: 10px;">🌸</div>
+                <h3 style="color: #a16207; font-size: 20px; margin-bottom: 8px;">花香家族</h3>
+                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">轻盈、优雅，常出现在高海拔阿拉比卡里。</p>
+                <div class="tags">
+                    <span class="tag">茉莉</span>
+                    <span class="tag">玫瑰</span>
+                    <span class="tag">白色花香</span>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fde68a;">
+                <div style="font-size: 32px; margin-bottom: 10px;">🍯</div>
+                <h3 style="color: #a16207; font-size: 20px; margin-bottom: 8px;">甜香家族</h3>
+                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">甜而不腻的焦糖感、糖蜜感，增加醇厚度。</p>
+                <div class="tags">
+                    <span class="tag">焦糖</span>
+                    <span class="tag">蜂蜜</span>
+                    <span class="tag">红糖</span>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #d6d3d1;">
+                <div style="font-size: 32px; margin-bottom: 10px;">🍫</div>
+                <h3 style="color: #44403c; font-size: 20px; margin-bottom: 8px;">坚果 / 可可</h3>
+                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">中深烘豆子的"安全感"，口感扎实。</p>
+                <div class="tags">
+                    <span class="tag">杏仁</span>
+                    <span class="tag">榛果</span>
+                    <span class="tag">黑巧克力</span>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fdba74;">
+                <div style="font-size: 32px; margin-bottom: 10px;">🌶️</div>
+                <h3 style="color: #c2410c; font-size: 20px; margin-bottom: 8px;">香料家族</h3>
+                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">温暖、厚重，常和印尼豆、深烘豆联系在一起。</p>
+                <div class="tags">
+                    <span class="tag">肉桂</span>
+                    <span class="tag">丁香</span>
+                    <span class="tag">胡椒</span>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #86efac;">
+                <div style="font-size: 32px; margin-bottom: 10px;">🌿</div>
+                <h3 style="color: #15803d; font-size: 20px; margin-bottom: 8px;">烘焙 / 草本 / 谷物</h3>
+                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">从青草、麦芽到烤麦，往往代表更成熟或更深烘焙。</p>
+                <div class="tags">
+                    <span class="tag">青草</span>
+                    <span class="tag">麦芽</span>
+                    <span class="tag">烟熏</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-card mt-12" style="border-left-color: #f59e0b;">
+            <div class="info-label">💡 给初学者的建议</div>
+            <h4>先会分类，再求精准</h4>
+            <p>一开始能说出"这是水果调"已经足够好；等喝过几十杯不同产地、不同处理法的咖啡后，再慢慢细化到"像蓝莓还是像柑橘"。不要急于对照风味轮上的每一个词。</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 05 风味的来源 ========== -->
+<section class="section">
+    <div class="container-narrow">
+        <div class="section-eyebrow">原理</div>
+        <h2 class="section-title">风味从哪儿来？</h2>
+
+        <div class="prose">
+            <p>同样的"风味"，可能在豆子还是绿色时就形成，也可能在烘焙过程中才出现。</p>
+        </div>
+
+        <div style="display: grid; gap: 16px; margin-top: 32px;">
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border-left: 4px solid #10b981;">
+                <h3 style="font-size: 19px; margin-bottom: 8px;">🌱 生豆阶段形成</h3>
+                <p style="color: var(--bean-mid); line-height: 1.8; margin: 0;">
+                    品种基因、所处海拔、土壤、处理法决定了<strong>"基础风味"</strong>——比如柑橘调、花香底子多在生豆阶段就已经定型。
+                </p>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border-left: 4px solid #f59e0b;">
+                <h3 style="font-size: 19px; margin-bottom: 8px;">🔥 烘焙阶段形成</h3>
+                <p style="color: var(--bean-mid); line-height: 1.8; margin: 0;">
+                    加热产生<strong>美拉德反应、焦糖化反应</strong>——巧克力、焦糖、烤麦一类的风味主要在此阶段诞生。烘焙度直接决定你能"激活"多少种风味。
+                </p>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border-left: 4px solid #8b5cf6;">
+                <h3 style="font-size: 19px; margin-bottom: 8px;">☕ 萃取阶段影响</h3>
+                <p style="color: var(--bean-mid); line-height: 1.8; margin: 0;">
+                    <strong>萃取率与温度</strong>决定你能从豆子里得到多少。萃取不足发酸涩，过度则发苦杂——同样一颗豆子冲得不同，可能给出完全不同的风味。
+                </p>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border-left: 4px solid #ef4444;">
+                <h3 style="font-size: 19px; margin-bottom: 8px;">⚠️ 储存阶段损失</h3>
+                <p style="color: var(--bean-mid); line-height: 1.8; margin: 0;">
+                    香气分子随时间挥发、被氧化。烘焙日期之后 <strong>4–6 周内</strong>是风味最佳期，放半年以上的豆子香气会断崖式下降。
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== 06 训练方法 ========== -->
+<section class="section" style="background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">训练</div>
+        <h2 class="section-title">怎么练出"喝得出"的能力？</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px;">
+            <div style="background: white; padding: 28px; border-radius: 16px;">
+                <div style="font-size: 36px; margin-bottom: 12px;">①</div>
+                <h3 style="font-size: 20px; margin-bottom: 10px;">从生活里找样本</h3>
+                <p style="color: var(--bean-mid); line-height: 1.75; margin: 0;">
+                    走进水果店、调料区、香料柜，把"柠檬、蓝莓、肉桂、丁香、可可"挨个闻一遍。大脑需要先把"标准样本"存进记忆库。
+                </p>
+            </div>
+            <div style="background: white; padding: 28px; border-radius: 16px;">
+                <div style="font-size: 36px; margin-bottom: 12px;">②</div>
+                <h3 style="font-size: 20px; margin-bottom: 10px;">同一支豆子多次喝</h3>
+                <p style="color: var(--bean-mid); line-height: 1.75; margin: 0;">
+                    每次只关注<strong>一种维度</strong>：第一口只问"酸不酸"，第二口只问"甜不甜"，第三口只问"像哪种家族"。
+                </p>
+            </div>
+            <div style="background: white; padding: 28px; border-radius: 16px;">
+                <div style="font-size: 36px; margin-bottom: 12px;">③</div>
+                <h3 style="font-size: 20px; margin-bottom: 10px;">控制变量对比喝</h3>
+                <p style="color: var(--bean-mid); line-height: 1.75; margin: 0;">
+                    推荐做法：<strong>同产地 / 不同处理法</strong>各买一袋对照；同一支豆子手冲 vs 法压各做一杯。
+                </p>
+            </div>
+            <div style="background: white; padding: 28px; border-radius: 16px;">
+                <div style="font-size: 36px; margin-bottom: 12px;">④</div>
+                <h3 style="font-size: 20px; margin-bottom: 10px;">记录你的品鉴笔记</h3>
+                <p style="color: var(--bean-mid); line-height: 1.75; margin: 0;">
+                    哪怕只写"<strong>酸 + 水果 + 余韵短</strong>"也很有价值。三个月后回看，你会被自己的进步惊艳到。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 07 一图速查 ========== -->
+<section class="section" style="background: var(--bean-dark); color: var(--cream);">
+    <div class="container-narrow">
+        <div class="text-center" style="margin-bottom: 56px;">
+            <div class="section-eyebrow" style="color: var(--cream-dark); opacity: 0.6;">CHEAT SHEET</div>
+            <h2 class="section-title" style="color: var(--cream);">风味速查卡</h2>
+        </div>
+
+        <table class="compare-table" style="background: rgba(255,255,255,0.06); color: var(--cream);">
+            <thead style="background: rgba(255,255,255,0.1);">
+                <tr>
+                    <th>维度</th>
+                    <th>正面提示</th>
+                    <th>可能的原因</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td style="color: var(--cream);">酸度</td><td style="color: var(--cream-dark);">明亮、果酸</td><td style="color: var(--cream-dark);">高海拔 / 水洗 / 浅烘</td></tr>
+                <tr><td style="color: var(--cream);">甜度</td><td style="color: var(--cream-dark);">蜂蜜、焦糖感</td><td style="color: var(--cream-dark);">成熟果实 / 蜜处理 / 中烘</td></tr>
+                <tr><td style="color: var(--cream);">醇厚度</td><td style="color: var(--cream-dark);">丝绸般 / 浆感</td><td style="color: var(--cream-dark);">湿刨 / 深烘 / 罗布斯塔混</td></tr>
+                <tr><td style="color: var(--cream);">水果调</td><td style="color: var(--cream-dark);">柑橘、莓果</td><td style="color: var(--cream-dark);">日晒 / 厌氧 / 埃塞俄比亚</td></tr>
+                <tr><td style="color: var(--cream);">香料感</td><td style="color: var(--cream-dark);">肉桂、丁香</td><td style="color: var(--cream-dark);">湿刨 / 深烘 / 印尼</td></tr>
+                <tr><td style="color: var(--cream);">余韵</td><td style="color: var(--cream-dark);">悠长 / 干净</td><td style="color: var(--cream-dark);">豆子新鲜 + 萃取得当</td></tr>
+                <tr><td style="color: var(--cream);">负面提示</td><td style="color: var(--cream-dark);">霉味 / 纸味 / 焦苦</td><td style="color: var(--cream-dark);">储存不当 / 烘焙失败 / 萃取过萃</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ========== 08 进阶 + CTA ========== -->
+<section class="section">
+    <div class="container-narrow text-center">
+        <div class="section-eyebrow">下一步</div>
+        <h2 class="section-title">风味是天性，但"读懂它"是科学</h2>
+        <p style="color: var(--bean-mid); font-size: 17px; line-height: 1.85; max-width: 640px; margin: 16px auto 40px;">
+            当你能稳定识别出三四个风味家族，下一步就是了解<strong>为什么这些风味会形成</strong>——也就是豆种本身。下面我们去看豆种如何从基因层面决定咖啡的"上限"。
+        </p>
+        <a href="varieties.html" class="btn btn-primary">下一章：豆种 →</a>
+    </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h5>☕ 咖啡科普小站</h5>
+                <p style="color: rgba(250,245,236,0.6); line-height: 1.7; margin: 0;">
+                    豆种 · 处理法 · 风味<br>
+                    一杯咖啡的三段式入门。
+                </p>
+            </div>
+            <div>
+                <h5>CH · 三个章节</h5>
+                <a href="processing.html">01 处理法</a>
+                <a href="flavor.html">02 风味</a>
+                <a href="varieties.html">03 豆种</a>
+            </div>
+            <div>
+                <h5>SITE</h5>
+                <a href="index.html#about">关于本站</a>
+                <a href="index.html#contact">联系作者</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 王培鑫 · 咖啡科普小站</span>
+            <span>用一杯咖啡的时间，读懂一杯咖啡</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡科普小站 · 从一颗果实到一杯咖啡</title>
+    <meta name="description" content="一个关于咖啡的小型科普站：处理法、风味、豆种 —— 三步读懂一杯咖啡。">
+    <meta property="og:title" content="咖啡科普小站">
+    <meta property="og:description" content="三分钟入门，从一颗果实到一杯咖啡">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false },
+            theme: { extend: {} }
+        }
+    </script>
+</head>
+<body>
+
+<!-- ========== 顶部导航 ========== -->
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">☕</span>
+            <span>咖啡科普小站</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">首页</a>
+            <a href="processing.html" class="nav-link">处理法</a>
+            <a href="flavor.html" class="nav-link">风味</a>
+            <a href="varieties.html" class="nav-link">豆种</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== Hero ========== -->
+<header class="hero">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-tag">
+                <span>●</span><span>COFFEE · 101 · 入门科普</span>
+            </div>
+            <h1 class="hero-title">
+                从一颗果实，<br>
+                <span class="accent">到一杯咖啡</span>
+            </h1>
+            <p class="hero-desc">
+                我们用三个角度，带你读懂咖啡豆的世界：<br>
+                <strong style="color: var(--bean-light)">处理法</strong>决定风味走向 ·
+                <strong style="color: var(--bean-light)">风味</strong>是喝到的体验 ·
+                <strong style="color: var(--bean-light)">豆种</strong>是这一切的基因起点。
+            </p>
+            <div class="hero-meta">
+                <span>📚 三个章节</span>
+                <span>·</span>
+                <span>⏱ 总计阅读约 15 分钟</span>
+                <span>·</span>
+                <span>☕ 入门友好</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ========== 三个入口卡 ========== -->
+<section class="section">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 56px;">
+            <div class="section-eyebrow">EXPLORE · 探索三个章节</div>
+            <h2 class="section-title" style="margin: 0 auto 16px; max-width: 720px;">选一个你最好奇的话题开始</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">
+                三个章节彼此独立，可以任选顺序。读完一篇就会对上另一篇有更深的共鸣。
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- 处理法 -->
+            <a href="processing.html" class="card entry-card">
+                <div class="card-visual visual-processing">☀️ 💧 🌴</div>
+                <div class="card-body">
+                    <div class="card-meta">CHAPTER 01 · 处理法</div>
+                    <h3 class="card-title">咖啡是怎么被"处理"的？</h3>
+                    <p class="card-desc">
+                        日晒、水洗、湿刨 —— 咖啡从果实变成生豆的三种主流工艺。
+                        不同的处理法决定了咖啡基础风味的轮廓。
+                    </p>
+                    <div class="card-arrow">开始阅读 →</div>
+                </div>
+            </a>
+
+            <!-- 风味 -->
+            <a href="flavor.html" class="card entry-card">
+                <div class="card-visual visual-flavor">🍋 🍓 🍫</div>
+                <div class="card-body">
+                    <div class="card-meta">CHAPTER 02 · 风味</div>
+                    <h3 class="card-title">咖啡里究竟"尝"到什么？</h3>
+                    <p class="card-desc">
+                        酸、甜、苦、香的系统识别法，
+                        一份实用的"咖啡风味轮"带你读懂杯测笔记与包装标签。
+                    </p>
+                    <div class="card-arrow">开始阅读 →</div>
+                </div>
+            </a>
+
+            <!-- 豆种 -->
+            <a href="varieties.html" class="card entry-card">
+                <div class="card-visual visual-varieties">🌱 🌿 🍃</div>
+                <div class="card-body">
+                    <div class="card-meta">CHAPTER 03 · 豆种</div>
+                    <h3 class="card-title">"阿拉比卡"到底是什么？</h3>
+                    <p class="card-desc">
+                        三大原生种、阿拉比卡下面的瑰夏/铁皮卡/波旁……
+                        一颗咖啡豆的"基因"决定了它最终能酿出什么风味。
+                    </p>
+                    <div class="card-arrow">开始阅读 →</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== 读懂顺序建议 ========== -->
+<section class="section" style="background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);">
+    <div class="container-narrow">
+        <div class="section-eyebrow text-center">LEARN PATH · 推荐阅读顺序</div>
+        <h2 class="section-title text-center">如果你第一次接触咖啡，建议这样读</h2>
+
+        <div style="margin-top: 48px; display: grid; gap: 20px;">
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border-left: 4px solid #fb923c; display: flex; gap: 20px; align-items: flex-start;">
+                <div style="background: #fb923c; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 700;">1</div>
+                <div>
+                    <h3 style="font-size: 20px; margin-bottom: 6px;">先认识<strong>豆种</strong></h3>
+                    <p style="color: var(--bean-mid); margin: 0;">了解"这颗豆子是谁"——基因决定上限。</p>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border-left: 4px solid #06b6d4; display: flex; gap: 20px; align-items: flex-start;">
+                <div style="background: #06b6d4; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 700;">2</div>
+                <div>
+                    <h3 style="font-size: 20px; margin-bottom: 6px;">再了解<strong>处理法</strong></h3>
+                    <p style="color: var(--bean-mid); margin: 0;">了解"它是怎么被加工的"——处理重塑风味轮廓。</p>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 24px; border-radius: 16px; border-left: 4px solid #8b5cf6; display: flex; gap: 20px; align-items: flex-start;">
+                <div style="background: #8b5cf6; color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 700;">3</div>
+                <div>
+                    <h3 style="font-size: 20px; margin-bottom: 6px;">最后学<strong>风味</strong></h3>
+                    <p style="color: var(--bean-mid); margin: 0;">带着前两章背景，去识别杯中复杂的风味信号。</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== 关于本站 ========== -->
+<section class="section" id="about">
+    <div class="container-narrow">
+        <div class="section-eyebrow" style="text-align: center;">ABOUT</div>
+        <h2 class="section-title" style="text-align: center;">关于这个站点</h2>
+        <p style="color: var(--bean-mid); font-size: 17px; line-height: 1.85; max-width: 640px; margin: 16px auto 0; text-align: center;">
+            一个面向咖啡初学者的小型科普站。先简单介绍一下这站点的来历和作者，方便你判断内容值不值得读。
+        </p>
+
+        <!-- 五个模块 -->
+        <div class="about-grid">
+
+            <div class="about-card">
+                <div class="about-icon">💡</div>
+                <h3>建站动机</h3>
+                <p>作为一个咖啡专业学生，发现很少有人在科普从传统意式豆向精品豆过度的知识，所以想做个入门级的小站。</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">👤</div>
+                <h3>作者介绍</h3>
+                <p>
+                    <strong>王培鑫</strong> · 云南农业大学<br>
+                    咖啡科学与工程专业在读<br>
+                    持有 SCA Q-grader 与 SCA 咖啡师（中级）认证。一个对精品咖啡充满热情的入门级科普作者。
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">📚</div>
+                <h3>内容来源</h3>
+                <p>本站基于多份公开的咖啡科普材料整理、重写与扩展，文字均为原创改写。如发现参考内容的版权归属，请联系作者予以补充说明。</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">✏️</div>
+                <h3>纠错与反馈</h3>
+                <p>咖啡知识持续在更新，作者水平也有限。如果你发现内容有误，欢迎通过下方联系方式指正 —— 每一条反馈都会让这个小站更值得信任。</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">🕐</div>
+                <h3>更新与维护</h3>
+                <p>
+                    <strong>v1.2</strong> · 2026-09-08<br>
+                    处理法章节基于 PDF 一手资料扩展完成；风味章节调整为入门科普粒度；新增联系作者与关于本站区段。
+                </p>
+            </div>
+        </div>
+
+        <!-- 联系作者 -->
+        <div id="contact" class="contact-block">
+            <div class="contact-eyebrow">CONTACT</div>
+            <h3>📮 联系作者</h3>
+            <p>想聊聊咖啡、提出纠错、或者有任何合作想法，都欢迎随时找作者本人。建议优先使用微信，回复最快。</p>
+
+            <div class="contact-grid">
+                <a href="#" class="contact-item" title="微信：13161002828">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-label">WECHAT · 微信</div>
+                    <div class="contact-value">13161002828</div>
+                </a>
+                <a href="tel:13161002828" class="contact-item" title="点击拨号">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-label">PHONE · 手机</div>
+                    <div class="contact-value">131 6100 2828</div>
+                </a>
+                <a href="mailto:wangpeixin4444@gmail.com" class="contact-item" title="发送邮件">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-label">EMAIL · 邮箱</div>
+                    <div class="contact-value">wangpeixin4444@gmail.com</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h5>☕ 咖啡科普小站</h5>
+                <p style="color: rgba(250,245,236,0.6); line-height: 1.7; margin: 0;">
+                    豆种 · 处理法 · 风味<br>
+                    一杯咖啡的三段式入门。
+                </p>
+            </div>
+            <div>
+                <h5>CH · 三个章节</h5>
+                <a href="processing.html">01 处理法</a>
+                <a href="flavor.html">02 风味</a>
+                <a href="varieties.html">03 豆种</a>
+            </div>
+            <div>
+                <h5>SITE</h5>
+                <a href="#about">关于本站</a>
+                <a href="#contact">联系作者</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 王培鑫 · 咖啡科普小站</span>
+            <span>用一杯咖啡的时间，读懂一杯咖啡</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
