@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡冲泡指南 · 咖啡科普小站</title>
+    <meta name="description" content="手冲、法压、意式、Moka、虹吸壶、冰滴、爱乐压——从原理到参数，一次看懂七种主流咖啡冲泡方式。">
+    <meta property="og:title" content="咖啡冲泡指南">
+    <meta property="og:description" content="手冲 / 法压 / 意式 / Moka / 虹吸 / 冰滴 / 爱乐压 · 七种主流冲泡方式原理与参数">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💧%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { corePlugins: { preflight: false }, theme: { extend: {} } }
+    </script>
+</head>
+<body>
+
+<!-- ========== 顶部导航 ========== -->
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">☕</span>
+            <span>咖啡科普小站</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="processing.html" class="nav-link">处理法</a>
+            <a href="flavor.html" class="nav-link">风味</a>
+            <a href="varieties.html" class="nav-link">豆种</a>
+            <a href="brewing.html" class="nav-link active">冲泡</a>
+            <a href="origins.html" class="nav-link">产区</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== 面包屑 ========== -->
+<div class="breadcrumb">
+    <div class="container">
+        <a href="index.html">首页</a>
+        <span class="sep">›</span>
+        <span>第四章 · 冲泡指南</span>
+    </div>
+</div>
+
+<!-- ========== 子页 Hero ========== -->
+<header class="sub-hero">
+    <div class="container-narrow">
+        <a href="index.html" class="back-link">← 返回首页</a>
+        <div class="hero-tag">
+            <span>●</span><span>CHAPTER 04 · 冲泡</span>
+        </div>
+        <h1>同一种豆，<br><span style="color: var(--bean-light);">七种冲法</span>，七种味道</h1>
+        <p class="lead">
+            咖啡的风味不只是豆子决定的——<strong style="color: var(--bean-dark);">怎么冲</strong>，同样关键。
+            不同的水温、粉水比、时间、压力，会让同一支豆子变成完全不同的饮品。
+        </p>
+    </div>
+</header>
+
+<!-- ========== 01 为什么冲泡重要 ========== -->
+<section class="section">
+    <div class="container-narrow">
+        <div class="section-eyebrow">为什么</div>
+        <h2 class="section-title">为什么冲泡方式会改变风味？</h2>
+
+        <div class="prose">
+            <p>咖啡豆里有<strong>约 30% 可溶于水的物质</strong>，其中只有一部分是好味道。冲泡，本质上是用<strong>水</strong>作为介质，<strong>有选择地</strong>把这些物质提取出来。</p>
+            <p>同一支豆子，水温高 + 时间长 → 萃取过度 → 苦涩、烟熏；水温低 + 时间短 → 萃取不足 → 寡淡、尖酸。<strong>只有恰到好处，才会有"酸甜苦平衡、层次丰富"的体验。</strong></p>
+            <p>而不同的冲泡器具，其实就是<strong>用不同方式控制"水温和咖啡的接触方式"</strong>——手冲靠水流冲刷，意式机靠高压萃取，冰滴靠长时间低温浸泡。</p>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-num">7</div>
+                <div class="stat-label">常见冲泡方式</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">90–96<span style="font-size: 22px;">°C</span></div>
+                <div class="stat-label">常规冲泡水温</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">18–22<span style="font-size: 22px;">%</span></div>
+                <div class="stat-label">理想萃取率</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 02 冲泡方式速览 ========== -->
+<section class="section" style="background: var(--cream-dark);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">速览</div>
+        <h2 class="section-title">七种主流冲泡方式</h2>
+        <p style="color: var(--bean-mid); margin-bottom: 32px;">按"上手难度"从低到高排列，每种都是一组独立风格。</p>
+
+        <div class="method-grid">
+            <a href="#french" class="method-card">
+                <div class="method-emoji">🫖</div>
+                <h3>法压壶</h3>
+                <p>浸泡式 · 简单直接</p>
+                <div class="method-tag">入门首选</div>
+            </a>
+            <a href="#drip" class="method-card">
+                <div class="method-emoji">💧</div>
+                <h3>手冲</h3>
+                <p>滤杯 + 水流 · 自由度最高</p>
+                <div class="method-tag">玩家最爱</div>
+            </a>
+            <a href="#espresso" class="method-card">
+                <div class="method-emoji">☕</div>
+                <h3>意式机</h3>
+                <p>高压萃取 · 浓度最高</p>
+                <div class="method-tag">咖啡馆标配</div>
+            </a>
+            <a href="#moka" class="method-card">
+                <div class="method-emoji">🔥</div>
+                <h3>Moka 壶</h3>
+                <p>蒸汽加压 · 家用经典</p>
+                <div class="method-tag">意式平替</div>
+            </a>
+            <a href="#aeropress" class="method-card">
+                <div class="method-emoji">💉</div>
+                <h3>爱乐压</h3>
+                <p>手压萃取 · 便携万能</p>
+                <div class="method-tag">户外友好</div>
+            </a>
+            <a href="#siphon" class="method-card">
+                <div class="method-emoji">⚗️</div>
+                <h3>虹吸壶</h3>
+                <p>蒸汽 + 真空 · 视觉系</p>
+                <div class="method-tag">仪式感强</div>
+            </a>
+            <a href="#cold" class="method-card">
+                <div class="method-emoji">❄️</div>
+                <h3>冰滴 / 冷萃</h3>
+                <p>低温长时间 · 甜感明显</p>
+                <div class="method-tag">夏日特调</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 03 各种冲泡方式详解 ========== -->
+<section class="section">
+    <div class="container-narrow">
+
+        <div class="section-eyebrow">详解</div>
+        <h2 class="section-title">逐一拆解：原理、参数与味道</h2>
+
+        <!-- 法压 -->
+        <article id="french" class="method-detail">
+            <div class="method-detail-head">
+                <span class="method-num">01</span>
+                <h3>法压壶（French Press）</h3>
+                <span class="method-class">浸泡式</span>
+            </div>
+            <p class="method-desc"><strong>原理：</strong>把粗研磨的咖啡粉直接泡在热水里 4 分钟左右，再用金属滤网压下去，把渣滓隔开。</p>
+            <div class="param-table">
+                <div class="param-row"><span>粉水比</span><b>1:15</b>（15g 咖啡 + 225g 水）</div>
+                <div class="param-row"><span>水温</span><b>92–96°C</b></div>
+                <div class="param-row"><span>研磨度</span><b>粗研磨</b>（类似粗盐）</div>
+                <div class="param-row"><span>时间</span><b>4 分钟</b></div>
+            </div>
+            <p class="method-taste"><strong>味道：</strong>醇厚、有明显油脂感、口感扎实。会有少量细粉沉淀，但不浑浊。适合喜欢"厚重感"的人。</p>
+            <p class="method-tip"><strong>小贴士：</strong>买玻璃壶身 + 不锈钢滤网的款式即可，入门套装通常 ¥30–80。</p>
+        </article>
+
+        <!-- 手冲 -->
+        <article id="drip" class="method-detail">
+            <div class="method-detail-head">
+                <span class="method-num">02</span>
+                <h3>手冲（V60 / 蛋糕杯 / 聪明杯）</h3>
+                <span class="method-class">滤杯注水</span>
+            </div>
+            <p class="method-desc"><strong>原理：</strong>热水通过滤杯中的咖啡粉层，受重力作用滴落。注水方式、水流速度、滤杯形状都会影响味道。</p>
+            <div class="param-table">
+                <div class="param-row"><span>粉水比</span><b>1:15–1:17</b></div>
+                <div class="param-row"><span>水温</span><b>88–94°C</b>（浅烘用高 / 深烘用低）</div>
+                <div class="param-row"><span>研磨度</span><b>中细研磨</b>（类似白砂糖）</div>
+                <div class="param-row"><span>时间</span><b>2:30–3:30</b></div>
+            </div>
+            <p class="method-taste"><strong>味道：</strong>层次清晰、酸质明亮，最能展现咖啡豆的"风土"——所以精品咖啡店几乎都用手冲。也是玩家最爱、最耐玩的方式。</p>
+            <p class="method-tip"><strong>小贴士：</strong>入门推荐 V60 滤杯 + 一把鹅颈壶 + 一只手摇磨豆机，预算 ¥300–500 就能起步。</p>
+        </article>
+
+        <!-- 意式 -->
+        <article id="espresso" class="method-detail">
+            <div class="method-detail-head">
+                <span class="method-num">03</span>
+                <h3>意式机（Espresso）</h3>
+                <span class="method-class">高压萃取</span>
+            </div>
+            <p class="method-desc"><strong>原理：</strong>9 bar 大气压 + 90°C 左右的热水，<strong>25–30 秒</strong>内穿过 18g 左右的细研磨咖啡粉，得到约 36g 浓缩液。</p>
+            <div class="param-table">
+                <div class="param-row"><span>粉量</span><b>18 g（双份）</b></div>
+                <div class="param-row"><span>出液量</span><b>36 g</b></div>
+                <div class="param-row"><span>时间</span><b>25–30 秒</b></div>
+                <div class="param-row"><span>研磨度</span><b>极细</b>（类似面粉）</div>
+            </div>
+            <p class="method-taste"><strong>味道：</strong>高浓度、油脂丰富（crema 油脂层）、苦甜平衡明显。是拿铁、卡布、美式等所有咖啡馆饮品的"基底"。</p>
+            <p class="method-tip"><strong>小贴士：</strong>家用意式机入门门槛较高（¥2000+），新手可以从胶囊机或半自动入门。</p>
+        </article>
+
+        <!-- Moka -->
+        <article id="moka" class="method-detail">
+            <div class="method-detail-head">
+                <span class="method-num">04</span>
+                <h3>Moka 壶（摩卡壶）</h3>
+                <span class="method-class">蒸汽加压</span>
+            </div>
+            <p class="method-desc"><strong>原理：</strong>下壶水加热产生蒸汽，蒸汽压力（约 1.5–2 bar）把水推过咖啡粉层，汇集到上壶。意大利家庭的"国民器具"。</p>
+            <div class="param-table">
+                <div class="param-row"><span>粉水比</span><b>下壶装满水 / 粉槽装平</b></div>
+                <div class="param-row"><span>火力</span><b>中小火</b>（避免过萃）</div>
+                <div class="param-row"><span>研磨度</span><b>中细研磨</b></div>
+                <div class="param-row"><span>时间</span><b>4–5 分钟</b></div>
+            </div>
+            <p class="method-taste"><strong>味道：</strong>比手冲浓、比意式稍弱，口感厚重、香气集中。常被叫"穷人的意式"。</p>
+            <p class="method-tip"><strong>小贴士：</strong>看到上壶液体颜色从深棕变浅时，立刻离火（避免焦苦）。经典品牌 Bialetti 经典款 ¥200–400。</p>
+        </article>
+
+        <!-- 爱乐压 -->
+        <article id="aeropress" class="method-detail">
+            <div class="method-detail-head">
+                <span class="method-num">05</span>
+                <h3>爱乐压（AeroPress）</h3>
+                <span class="method-class">手压萃取</span>
+            </div>
+            <p class="method-desc"><strong>原理：</strong>用注射器式的结构，手动按压活塞，<strong>20 秒左右</strong>把水压过滤纸挤出浓缩液。介于手冲和意式之间。</p>
+            <div class="param-table">
+                <div class="param-row"><span>粉水比</span><b>1:10–1:16</b></div>
+                <div class="param-row"><span>水温</span><b>85–94°C</b></div>
+                <div class="param-row"><span>研磨度</span><b>中细研磨</b></div>
+                <div class="param-row"><span>时间</span><b>1:30–2:00</b></div>
+            </div>
+            <p class="method-taste"><strong>味道：</strong>口感干净、风味浓郁。可以做出接近意式的"小浓缩"，也可以做清淡美式。可玩性极强。</p>
+            <p class="method-tip"><strong>小贴士：</strong>体积小、不需要电，户外、旅行、酒店都用得上。原版套装约 ¥300。</p>
+        </article>
+
+        <!-- 虹吸 -->
+        <article id="siphon" class="method-detail">
+            <div class="method-detail-head">
+                <span class="method-num">06</span>
+                <h3>虹吸壶（Syphon）</h3>
+                <span class="method-class">蒸汽 + 真空</span>
+            </div>
+            <p class="method-desc"><strong>原理：</strong>下壶水被酒精灯或卤素灯加热汽化，蒸汽把水推上上壶与咖啡粉混合；离火后下壶减压，咖啡液又被"吸"回下壶，全程过滤完成。</p>
+            <div class="param-table">
+                <div class="param-row"><span>粉水比</span><b>1:12–1:15</b></div>
+                <div class="param-row"><span>水温</span><b>90–92°C</b></div>
+                <div class="param-row"><span>研磨度</span><b>中研磨</b></div>
+                <div class="param-row"><span>时间</span><b>1:30–2:30</b></div>
+            </div>
+            <p class="method-taste"><strong>味道：</strong>口感顺滑、香气饱满、温度控制精准，咖啡师比赛常用。视觉上像化学实验，仪式感拉满。</p>
+            <p class="method-tip"><strong>小贴士：</strong>操作稍复杂，需要练习。入门套装 ¥150–400。</p>
+        </article>
+
+        <!-- 冰滴/冷萃 -->
+        <article id="cold" class="method-detail">
+            <div class="method-detail-head">
+                <span class="method-num">07</span>
+                <h3>冰滴 / 冷萃（Cold Brew）</h3>
+                <span class="method-class">低温长时间</span>
+            </div>
+            <p class="method-desc"><strong>原理：</strong>冰水以极慢速度（约 1 滴/秒）滴过咖啡粉，全程 2–8 小时。冷萃则是直接把咖啡粉泡在冷水里 12–18 小时再过滤。</p>
+            <div class="param-table">
+                <div class="param-row"><span>粉水比</span><b>1:8–1:12</b>（浓度高，可兑水）</div>
+                <div class="param-row"><span>水温</span><b>0–10°C</b></div>
+                <div class="param-row"><span>研磨度</span><b>粗研磨</b></div>
+                <div class="param-row"><span>时间</span><b>冰滴 2–8h / 冷萃 12–18h</b></div>
+            </div>
+            <p class="method-taste"><strong>味道：</strong>低酸、极甜、顺滑，几乎无苦味。香气物质在低温下萃取有限，所以咖啡因反而比热咖啡低（因粉水比高可能略高）。</p>
+            <p class="method-tip"><strong>小贴士：</strong>做一次能存冰箱 1–2 周，夏日神器。家庭版用一个普通带阀门的塑料壶即可 DIY。</p>
+        </article>
+    </div>
+</section>
+
+<!-- ========== 04 一图看懂 ========== -->
+<section class="section" style="background: var(--cream-dark);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">一图看懂</div>
+        <h2 class="section-title">七种冲泡方式速查表</h2>
+
+        <div class="compare-table-wrap">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>方式</th>
+                        <th>类型</th>
+                        <th>水温</th>
+                        <th>研磨度</th>
+                        <th>时间</th>
+                        <th>上手难度</th>
+                        <th>口感关键词</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>法压</td>
+                        <td>浸泡</td>
+                        <td>92–96°C</td>
+                        <td>粗</td>
+                        <td>4 min</td>
+                        <td>★</td>
+                        <td>醇厚、油脂感</td>
+                    </tr>
+                    <tr>
+                        <td>手冲</td>
+                        <td>注水</td>
+                        <td>88–94°C</td>
+                        <td>中细</td>
+                        <td>2:30–3:30</td>
+                        <td>★★★</td>
+                        <td>层次、清亮</td>
+                    </tr>
+                    <tr>
+                        <td>意式</td>
+                        <td>高压</td>
+                        <td>90–94°C</td>
+                        <td>极细</td>
+                        <td>25–30 s</td>
+                        <td>★★★★★</td>
+                        <td>浓缩、油脂</td>
+                    </tr>
+                    <tr>
+                        <td>Moka</td>
+                        <td>蒸汽</td>
+                        <td>下壶加热</td>
+                        <td>中细</td>
+                        <td>4–5 min</td>
+                        <td>★★</td>
+                        <td>厚实、浓郁</td>
+                    </tr>
+                    <tr>
+                        <td>爱乐压</td>
+                        <td>手压</td>
+                        <td>85–94°C</td>
+                        <td>中细</td>
+                        <td>1:30–2:00</td>
+                        <td>★★</td>
+                        <td>干净、灵活</td>
+                    </tr>
+                    <tr>
+                        <td>虹吸</td>
+                        <td>蒸汽真空</td>
+                        <td>90–92°C</td>
+                        <td>中</td>
+                        <td>1:30–2:30</td>
+                        <td>★★★★</td>
+                        <td>顺滑、仪式</td>
+                    </tr>
+                    <tr>
+                        <td>冰滴 / 冷萃</td>
+                        <td>低温浸泡</td>
+                        <td>0–10°C</td>
+                        <td>粗</td>
+                        <td>2–18 h</td>
+                        <td>★★</td>
+                        <td>低酸、高甜</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 05 入门者推荐路径 ========== -->
+<section class="section">
+    <div class="container-narrow">
+        <div class="section-eyebrow">入门者</div>
+        <h2 class="section-title">新手应该从哪种开始？</h2>
+
+        <div class="recommend-grid">
+            <div class="recommend-card">
+                <div class="recommend-icon">🫖</div>
+                <h3>完全没碰过咖啡</h3>
+                <p>推荐 <strong>法压壶</strong>。操作简单、容错率高，先建立"咖啡=好喝"的体验。</p>
+                <div class="recommend-budget">预算 ¥50–100</div>
+            </div>
+            <div class="recommend-card">
+                <div class="recommend-icon">💧</div>
+                <h3>想试试"手冲的乐趣"</h3>
+                <p>推荐 <strong>V60 入门套装</strong>。稍花心思就能体验到"原来豆子差别这么大"。</p>
+                <div class="recommend-budget">预算 ¥300–500</div>
+            </div>
+            <div class="recommend-card">
+                <div class="recommend-icon">🔥</div>
+                <h3>喜欢意式风味、预算有限</h3>
+                <p>推荐 <strong>Moka 壶</strong>。性价比高，做出来的咖啡够浓，冬天炉子上煮也很有氛围。</p>
+                <div class="recommend-budget">预算 ¥200–400</div>
+            </div>
+            <div class="recommend-card">
+                <div class="recommend-icon">❄️</div>
+                <h3>夏天只想喝冷饮</h3>
+                <p>推荐 <strong>冷萃</strong>。一次做一大瓶放冰箱，加冰加奶都好喝，几乎零失败。</p>
+                <div class="recommend-budget">预算 ¥30–80</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 06 进阶提示 ========== -->
+<section class="section" style="background: var(--bean-darker); color: var(--cream);">
+    <div class="container-narrow">
+        <div class="section-eyebrow" style="color: var(--bean-pale);">进阶贴士</div>
+        <h2 class="section-title" style="color: var(--cream);">想要冲出"更好喝的咖啡"，关键在这三点</h2>
+
+        <div class="prose">
+            <p><strong style="color: var(--cream);">① 豆子新鲜度比器具更重要。</strong>烘焙日期超过 30 天的咖啡豆，无论用什么器具冲都不会好喝。买豆时看烘焙日期，1–2 周内的最佳。</p>
+            <p><strong style="color: var(--cream);">② 磨豆机比冲泡器具更影响风味。</strong>同样的豆子，磨得均匀 vs 不均匀，差出来能有 50% 的差距。预算允许的话先升级磨豆机。</p>
+            <p><strong style="color: var(--cream);">③ 水质决定上限。</strong>咖啡 98% 是水。自来水里的氯、矿物质都会影响味道。TDS 50–150 ppm 的过滤水最好，最简单是用净水器的纯净水。</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 07 CTA ========== -->
+<section class="section">
+    <div class="container-narrow text-center">
+        <h2 class="section-title">选好器具了吗？</h2>
+        <p style="color: var(--bean-mid); margin-bottom: 32px;">了解完冲泡方式，再回去看看豆种和处理法的影响，会发现咖啡是一整套体验。</p>
+        <div class="cta-row">
+            <a href="processing.html" class="cta-btn">处理法 ←</a>
+            <a href="flavor.html" class="cta-btn">风味识别</a>
+            <a href="origins.html" class="cta-btn">产区入门 →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h5>BASICCOFFEE</h5>
+                <p style="color: var(--cream-dark); opacity: 0.7; font-size: 14px; line-height: 1.7; max-width: 280px;">
+                    一个面向咖啡初学者的小型科普站，聚焦三件最影响咖啡风味的事：豆种 · 处理法 · 冲泡。
+                </p>
+            </div>
+            <div>
+                <h5>CHAPTERS</h5>
+                <a href="processing.html">处理法</a>
+                <a href="flavor.html">风味</a>
+                <a href="varieties.html">豆种</a>
+                <a href="brewing.html">冲泡</a>
+                <a href="origins.html">产区</a>
+            </div>
+            <div>
+                <h5>SITE</h5>
+                <a href="index.html#about">关于本站</a>
+                <a href="index.html#contact">联系作者</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 王培鑫 · basiccoffee.cn</span>
+            <span>用一杯咖啡的时间，读懂一杯咖啡</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
