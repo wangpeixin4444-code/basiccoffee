@@ -1316,12 +1316,26 @@ h1, h2, h3, h4 {
    五章节导航适配（更多链接）
    =========================================== */
 @media (max-width: 768px) {
-    .site-nav .nav-inner { flex-wrap: wrap; }
+    .site-nav { padding: 12px 0; }
+    .site-nav .nav-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .site-nav .brand {
+        font-size: 18px;
+        letter-spacing: 1px;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 4px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
     .site-nav .nav-links {
         width: 100%;
         overflow-x: auto;
         flex-wrap: nowrap;
-        padding-bottom: 4px;
+        justify-content: center;
+        padding-bottom: 2px;
     }
     .site-nav .nav-link { white-space: nowrap; }
 }
