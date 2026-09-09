@@ -617,6 +617,40 @@ h1, h2, h3, h4 {
     color: var(--bean-dark);
 }
 
+/* ===== 可横向滑动的表格容器 ===== */
+.compare-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 16px;
+    border: 1px solid rgba(164,113,72,0.12);
+    background: white;
+}
+
+.compare-table-wrap .compare-table {
+    min-width: 720px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.compare-table-wrap .compare-table th,
+.compare-table-wrap .compare-table td {
+    white-space: nowrap;
+}
+
+/* 移动端表格滚动提示 */
+.scroll-hint {
+    display: none;
+    color: var(--bean-mid);
+    font-size: 13px;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .scroll-hint { display: block; }
+}
+
 /* ===== 风味轮 SVG 容器 ===== */
 .flavor-wheel {
     background: var(--cream-dark);
