@@ -1426,3 +1426,48 @@ h1, h2, h3, h4 {
     }
     .site-nav .nav-link { white-space: nowrap; }
 }
+
+/* ===== 评论区（Giscus） ===== */
+.comments-section {
+    margin-top: 0;
+    padding: 50px 20px 60px;
+    background: var(--bg-cream);
+    border-top: 1px solid #e7d9c4;
+}
+.comments-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.comments-title {
+    font-size: 1.5rem;
+    color: var(--bean-dark);
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.comments-hint {
+    color: #7a6950;
+    font-size: 0.9rem;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+}
+.comments-hint a {
+    color: var(--bean-medium);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--bean-medium);
+}
+.comments-hint a:hover { color: var(--bean-light); }
+#comments-mount {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 12px rgba(111, 78, 55, 0.06);
+    border: 1px solid #efe4d2;
+}
+@media (max-width: 768px) {
+    .comments-section { padding: 35px 16px 45px; }
+    #comments-mount { padding: 12px 14px; }
+    .comments-title { font-size: 1.3rem; }
+}

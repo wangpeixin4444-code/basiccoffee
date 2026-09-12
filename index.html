@@ -9,7 +9,7 @@
     <meta property="og:description" content="三分钟入门，从一颗果实到一杯咖啡">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=1.4">
+    <link rel="stylesheet" href="assets/style.css?v=1.5">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -236,7 +236,7 @@
                 <h3>更新与维护</h3>
                 <p>
                     <strong>v1.5</strong> · 2026-09-12<br>
-                    处理法六大详解、冲泡七种方式全部新增实景配图（Unsplash 图库，含懒加载与加载失败兜底）；配图统一采用宽幅卡片 + 渐变图注样式。
+                    ① 处理法六大详解、冲泡七种方式全部新增实景配图（Unsplash 图库，含懒加载与加载失败兜底），配图统一采用宽幅卡片 + 渐变图注样式；② 全站 6 个页面底部嵌入 <strong>Giscus 评论区</strong>（基于 GitHub Discussions），访客可用 GitHub 账号登录评论，无需注册本站账号。
                 </p>
                 <p style="margin-top: 10px; color: var(--bean-mid); font-size: 13px;">
                     <strong>v1.4</strong> · 2026-09-09 · 风味章节新增“鼻前嗅觉 vs 鼻后嗅觉”科普模块；说明风味是嗅觉、味觉、口感与大脑联想共同作用的结果。
@@ -308,6 +308,30 @@
         </div>
     </div>
 </footer>
+
+<!-- 评论区：Giscus（基于 GitHub Discussions）-->
+<section class="comments-section" aria-label="评论区">
+    <div class="comments-container">
+        <h2 class="comments-title">💬 评论区</h2>
+        <p class="comments-hint">在 GitHub Discussions 留言讨论 · 无需登录，登录 GitHub 账号即可评论 · <a href="https://github.com/wangpeixin4444-code/basiccoffee/discussions" target="_blank" rel="noopener">查看历史讨论</a></p>
+        <div id="comments-mount"></div>
+        <script src="https://giscus.app/client.js"
+            data-repo="wangpeixin4444-code/basiccoffee"
+            data-repo-id="R_kgDOUSZH2Q"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOUSZH2c4DFbEl"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+</section>
 
 </body>
 </html>
