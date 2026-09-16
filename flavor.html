@@ -6,7 +6,7 @@
     <title>咖啡风味入门 · 咖啡科普小站</title>
     <meta name="description" content="从酸甜苦香到风味轮，一份写给咖啡初学者的风味识别框架。">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍓%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=1.5">
+    <link rel="stylesheet" href="assets/style.css?v=1.6">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -254,69 +254,93 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
 
-            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fbcfe8;">
-                <div style="font-size: 32px; margin-bottom: 10px;">🍊</div>
-                <h3 style="color: #c2410c; font-size: 20px; margin-bottom: 8px;">水果家族</h3>
-                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">咖啡里最常见的"清爽感"来源。</p>
-                <div class="tags">
-                    <span class="tag">柑橘</span>
-                    <span class="tag">莓果</span>
-                    <span class="tag">核果</span>
+            <div class="family-card" style="border-color: #fbcfe8;">
+                <div class="family-media">
+                    <img class="family-img" src="assets/img/family-berries.jpg" alt="新鲜莓果：蓝莓、树莓、黑莓" loading="lazy" onerror="this.closest('.family-media').style.display='none'">
+                    <span class="family-credit">Photo: Sneha Cecil / Unsplash</span>
+                </div>
+                <div class="family-body">
+                    <h3 style="color: #c2410c; font-size: 20px; margin-bottom: 8px;">🍊 水果家族</h3>
+                    <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">咖啡里最常见的"清爽感"来源。</p>
+                    <div class="tags">
+                        <span class="tag">柑橘</span>
+                        <span class="tag">莓果</span>
+                        <span class="tag">核果</span>
+                    </div>
                 </div>
             </div>
 
-            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fcd34d;">
-                <div style="font-size: 32px; margin-bottom: 10px;">🌸</div>
-                <h3 style="color: #a16207; font-size: 20px; margin-bottom: 8px;">花香家族</h3>
-                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">轻盈、优雅，常出现在高海拔阿拉比卡里。</p>
-                <div class="tags">
-                    <span class="tag">茉莉</span>
-                    <span class="tag">玫瑰</span>
-                    <span class="tag">白色花香</span>
+            <div class="family-card" style="border-color: #fcd34d;">
+                <div class="family-media">
+                    <img class="family-img" src="assets/img/family-floral.jpg" alt="咖啡树盛开的白色小花" loading="lazy" onerror="this.closest('.family-media').style.display='none'">
+                    <span class="family-credit">Photo: Projeto Café Gato Mourisco / Unsplash</span>
+                </div>
+                <div class="family-body">
+                    <h3 style="color: #a16207; font-size: 20px; margin-bottom: 8px;">🌸 花香家族</h3>
+                    <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">轻盈、优雅，常出现在高海拔阿拉比卡里。</p>
+                    <div class="tags">
+                        <span class="tag">茉莉</span>
+                        <span class="tag">玫瑰</span>
+                        <span class="tag">白色花香</span>
+                    </div>
                 </div>
             </div>
 
-            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fde68a;">
-                <div style="font-size: 32px; margin-bottom: 10px;">🍯</div>
-                <h3 style="color: #a16207; font-size: 20px; margin-bottom: 8px;">甜香家族</h3>
-                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">甜而不腻的焦糖感、糖蜜感，增加醇厚度。</p>
-                <div class="tags">
-                    <span class="tag">焦糖</span>
-                    <span class="tag">蜂蜜</span>
-                    <span class="tag">红糖</span>
+            <div class="family-card" style="border-color: #fde68a;">
+                <div class="family-media">
+                    <img class="family-img" src="assets/img/family-sweet.jpg" alt="玻璃罐中的蜂蜜与蜂巢" loading="lazy" onerror="this.closest('.family-media').style.display='none'">
+                    <span class="family-credit">Photo: Cristina Pop / Unsplash</span>
+                </div>
+                <div class="family-body">
+                    <h3 style="color: #a16207; font-size: 20px; margin-bottom: 8px;">🍯 甜香家族</h3>
+                    <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">甜而不腻的焦糖感、糖蜜感，增加醇厚度。</p>
+                    <div class="tags">
+                        <span class="tag">焦糖</span>
+                        <span class="tag">蜂蜜</span>
+                        <span class="tag">红糖</span>
+                    </div>
                 </div>
             </div>
 
-            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #d6d3d1;">
-                <div style="font-size: 32px; margin-bottom: 10px;">🍫</div>
-                <h3 style="color: #44403c; font-size: 20px; margin-bottom: 8px;">坚果 / 可可</h3>
-                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">中深烘豆子的"安全感"，口感扎实。</p>
-                <div class="tags">
-                    <span class="tag">杏仁</span>
-                    <span class="tag">榛果</span>
-                    <span class="tag">黑巧克力</span>
+            <div class="family-card" style="border-color: #d6d3d1;">
+                <div class="family-media">
+                    <img class="family-img" src="assets/img/family-cocoa.jpg" alt="黑巧克力板与可可豆" loading="lazy" onerror="this.closest('.family-media').style.display='none'">
+                    <span class="family-credit">Photo: Tetiana Bykovets / Unsplash</span>
+                </div>
+                <div class="family-body">
+                    <h3 style="color: #44403c; font-size: 20px; margin-bottom: 8px;">🍫 坚果 / 可可</h3>
+                    <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">中深烘豆子的"安全感"，口感扎实。</p>
+                    <div class="tags">
+                        <span class="tag">杏仁</span>
+                        <span class="tag">榛果</span>
+                        <span class="tag">黑巧克力</span>
+                    </div>
                 </div>
             </div>
 
-            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #fdba74;">
-                <div style="font-size: 32px; margin-bottom: 10px;">🌶️</div>
-                <h3 style="color: #c2410c; font-size: 20px; margin-bottom: 8px;">香料家族</h3>
-                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">温暖、厚重，常和印尼豆、深烘豆联系在一起。</p>
-                <div class="tags">
-                    <span class="tag">肉桂</span>
-                    <span class="tag">丁香</span>
-                    <span class="tag">胡椒</span>
+            <div class="family-card" style="border-color: #fdba74;">
+                <div class="family-media family-placeholder" style="background: linear-gradient(135deg, #fff7ed, #ffedd5);">🌶️</div>
+                <div class="family-body">
+                    <h3 style="color: #c2410c; font-size: 20px; margin-bottom: 8px;">香料家族</h3>
+                    <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">温暖、厚重，常和印尼豆、深烘豆联系在一起。</p>
+                    <div class="tags">
+                        <span class="tag">肉桂</span>
+                        <span class="tag">丁香</span>
+                        <span class="tag">胡椒</span>
+                    </div>
                 </div>
             </div>
 
-            <div style="background: white; padding: 24px; border-radius: 16px; border: 1px solid #86efac;">
-                <div style="font-size: 32px; margin-bottom: 10px;">🌿</div>
-                <h3 style="color: #15803d; font-size: 20px; margin-bottom: 8px;">烘焙 / 草本 / 谷物</h3>
-                <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">从青草、麦芽到烤麦，往往代表更成熟或更深烘焙。</p>
-                <div class="tags">
-                    <span class="tag">青草</span>
-                    <span class="tag">麦芽</span>
-                    <span class="tag">烟熏</span>
+            <div class="family-card" style="border-color: #86efac;">
+                <div class="family-media family-placeholder" style="background: linear-gradient(135deg, #fefce8, #fef3c7);">🌾</div>
+                <div class="family-body">
+                    <h3 style="color: #15803d; font-size: 20px; margin-bottom: 8px;">烘焙 / 草本 / 谷物</h3>
+                    <p style="font-size: 14px; color: var(--bean-mid); margin: 0 0 12px; line-height: 1.7;">从青草、麦芽到烤麦，往往代表更成熟或更深烘焙。</p>
+                    <div class="tags">
+                        <span class="tag">青草</span>
+                        <span class="tag">麦芽</span>
+                        <span class="tag">烟熏</span>
+                    </div>
                 </div>
             </div>
 
