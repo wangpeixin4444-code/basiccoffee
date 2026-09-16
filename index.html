@@ -9,7 +9,7 @@
     <meta property="og:description" content="三分钟入门，从一颗果实到一杯咖啡">
     <meta property="og:type" content="website">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=1.6">
+    <link rel="stylesheet" href="assets/style.css?v=1.7">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -235,8 +235,11 @@
                 <div class="about-icon">🕐</div>
                 <h3>更新与维护</h3>
                 <p>
-                    <strong>v1.7</strong> · 2026-09-16<br>
-                    配图全面实景化：处理法页六大处理法（☀️ 日晒、💧 水洗、🌴 湿刨、🍯 蜜处理、🫙 厌氧、🧪 双重厌氧）与冲泡页七种方式（法压壶、手冲、意式机、摩卡壶、爱乐压、虹吸壶、冰滴冷萃）共 <strong>13 张配图全部“一一对应”</strong>真实场景照片；图片统一本地化存储（assets/img/）、21:9 宽幅构图、渐进式 JPEG 压缩、懒加载与加载失败兜底，加载更快且不受外链失效影响。图片来源为 Unsplash / Pexels / Pixabay 等免费商用图库，图注均标注出处。
+                    <strong>v1.8</strong> · 2026-09-16<br>
+                    <strong>隐私保护升级：</strong>联系作者区段不再明文展示手机号，改为生成 <strong>vCard 二维码</strong>（assets/img/qr-contact.png）。访客用微信扫一扫即可一键保存手机号、邮箱、网址到通讯录——既方便联系又避免 11 位手机号在页面源码中裸奔、被爬虫抓取。邮箱渠道保留，可直接发邮件。
+                </p>
+                <p style="margin-top: 10px; color: var(--bean-mid); font-size: 13px;">
+                    <strong>v1.7</strong> · 2026-09-16 · 配图全面实景化：处理法页六大处理法与冲泡页七种方式共 13 张配图全部「一一对应」真实场景照片，统一本地化存储（assets/img/）、21:9 宽幅构图、懒加载与加载失败兜底；图片来源为 Unsplash / Pexels / Pixabay。
                 </p>
                 <p style="margin-top: 10px; color: var(--bean-mid); font-size: 13px;">
                     <strong>v1.6</strong> · 2026-09-16 · 风味页「6 大风味家族」卡片全部升级为图文卡片：水果（莓果）、花香（咖啡花）、甜香（蜂蜜）、坚果可可（黑巧）、香料（肉桂）、谷物（烘焙麦芽）一一配图；图片统一本地化存储、懒加载、4:3 统一构图。
@@ -260,19 +263,14 @@
         <div id="contact" class="contact-block">
             <div class="contact-eyebrow">CONTACT</div>
             <h3>📮 联系作者</h3>
-            <p>想聊聊咖啡、提出纠错、或者有任何合作想法，都欢迎随时找作者本人。建议优先使用微信，回复最快。</p>
+            <p>想聊聊咖啡、提出纠错、或者有任何合作想法，都欢迎随时找作者本人。<br><strong style="color: var(--cream);">📱 微信扫码即可一键添加为联系人</strong>，回复最快；不扫码也可以直接发邮件。</p>
 
             <div class="contact-grid">
-                <a href="#" class="contact-item" title="微信：13161002828">
-                    <div class="contact-icon">💬</div>
-                    <div class="contact-label">WECHAT · 微信</div>
-                    <div class="contact-value">13161002828</div>
-                </a>
-                <a href="tel:13161002828" class="contact-item" title="点击拨号">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-label">PHONE · 手机</div>
-                    <div class="contact-value">131 6100 2828</div>
-                </a>
+                <div class="contact-qr-card">
+                    <img src="assets/img/qr-contact.png" alt="联系作者二维码：扫码保存手机号、邮箱到通讯录" class="contact-qr-img" loading="lazy">
+                    <div class="contact-label">扫码添加 · ADD CONTACT</div>
+                    <p class="contact-qr-hint">用微信扫一扫，<br>手机号与邮箱一键保存到通讯录</p>
+                </div>
                 <a href="mailto:wangpeixin4444@gmail.com" class="contact-item" title="发送邮件">
                     <div class="contact-icon">✉️</div>
                     <div class="contact-label">EMAIL · 邮箱</div>

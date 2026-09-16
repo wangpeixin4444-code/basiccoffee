@@ -1112,6 +1112,43 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
+/* 联系作者二维码卡片 */
+.contact-qr-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 18px 18px;
+    background: var(--cream);
+    color: var(--bean-dark);
+    border-radius: 14px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+.contact-qr-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+}
+.contact-qr-img {
+    width: 220px;
+    height: 220px;
+    display: block;
+    margin-bottom: 14px;
+    border-radius: 10px;
+}
+.contact-qr-card .contact-label {
+    color: var(--bean-mid);
+    opacity: 1;
+    margin-bottom: 4px;
+}
+.contact-qr-hint {
+    font-size: 12px;
+    color: var(--bean-mid);
+    margin: 0;
+    opacity: 0.75;
+    text-align: center;
+    line-height: 1.5;
+}
+
 @media (max-width: 640px) {
     .contact-block { padding: 36px 20px; }
     .contact-block h3 { font-size: 22px; }
