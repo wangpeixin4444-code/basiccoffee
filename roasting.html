@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡烘焙入门 · 咖啡科普小站</title>
+    <meta name="description" content="美拉德反应、焦糖化、一爆二爆、烘焙度与烘焙机流派 —— 从一颗生豆到一杯熟豆，系统看懂咖啡烘焙的入门知识。">
+    <meta property="og:title" content="咖啡烘焙入门">
+    <meta property="og:description" content="美拉德 / 焦糖化 / 一爆二爆 / 烘焙度光谱 / 三大烘焙机流派 · 咖啡风味的引擎">
+    <meta property="og:type" content="article">
+    <link rel="canonical" href="https://basiccoffee.cn/roasting.html">
+    <meta property="og:url" content="https://basiccoffee.cn/roasting.html">
+    <meta property="og:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="咖啡科普小站——咖啡烘焙入门">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="咖啡烘焙入门">
+    <meta name="twitter:description" content="美拉德 / 焦糖化 / 一爆二爆 / 烘焙度光谱 / 三大烘焙机流派 · 咖啡风味的引擎">
+    <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔥%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="assets/style.css?v=1.8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { corePlugins: { preflight: false }, theme: { extend: {} } }
+    </script>
+</head>
+<body>
+
+<!-- ========== 顶部导航 ========== -->
+<nav class="site-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">☕</span>
+            <span>咖啡科普小站</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="processing.html" class="nav-link">处理法</a>
+            <a href="roasting.html" class="nav-link active">烘焙</a>
+            <a href="flavor.html" class="nav-link">风味</a>
+            <a href="varieties.html" class="nav-link">豆种</a>
+            <a href="brewing.html" class="nav-link">冲泡</a>
+            <a href="origins.html" class="nav-link">产区</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== 面包屑 ========== -->
+<div class="breadcrumb">
+    <div class="container">
+        <a href="index.html">首页</a>
+        <span class="sep">›</span>
+        <span>第二章 · 烘焙</span>
+    </div>
+</div>
+
+<!-- ========== 子页 Hero ========== -->
+<header class="sub-hero">
+    <div class="container-narrow">
+        <a href="index.html" class="back-link">← 返回首页</a>
+        <div class="hero-tag">
+            <span>●</span><span>CHAPTER 02 · 烘焙</span>
+        </div>
+        <h1>风味不是被冲出来的，<br>是在<span style="color: var(--bean-light);">滚筒里</span>被点燃的</h1>
+        <p class="lead">
+            生豆本身几乎没有"咖啡味"——只有淡淡的青草气。真正的香气，是烘焙时<span style="color: var(--bean-dark); font-weight: 600;">一连串化学反应</span>点燃的。
+            这一章我们讲清楚：美拉德反应、焦糖化、一爆二爆，以及烘焙度是怎么决定你杯中那口味道的。
+        </p>
+    </div>
+</header>
+
+<!-- ========== 01 为什么烘焙决定风味上限 ========== -->
+<section class="section">
+    <div class="container-narrow">
+        <div class="section-eyebrow">为什么</div>
+        <h2 class="section-title">为什么说烘焙是风味的"引擎"？</h2>
+
+        <div class="prose">
+            <p>生豆（<strong>Green Bean</strong>）其实闻起来一点都不"咖啡"——更像青草、谷物，甚至有点像晒干的豆子。你熟悉的咖啡香，要到烘焙（<strong>Roasting</strong>）里才被"创造"出来。</p>
+            <p>烘焙的本质是<strong>把热量的变化，翻译成化学变化</strong>：当豆温爬过 150°C，糖和氨基酸开始"跳舞"；爬过 200°C，豆体第一次发出爆裂声。短短 8–15 分钟里，一颗米黄色的生豆会变成深棕色的熟豆，重量掉掉 12–18%，香气却从零涨到 800 余种。</p>
+            <p>业内常说：生豆决定了风味的<strong>上限</strong>，烘焙决定了你能拿到<strong>多少</strong>。同一支 95 分的瑰夏，烘砸了也一样寡淡发苦——这就是为什么烘焙师更像"风味的翻译官"，而不是流水线操作员。</p>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-num">800<span style="font-size: 22px;">+</span></div>
+                <div class="stat-label">烘焙生成的芳香化合物</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">12–18<span style="font-size: 22px;">%</span></div>
+                <div class="stat-label">烘焙失重率</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">8–15<span style="font-size: 22px;">min</span></div>
+                <div class="stat-label">一锅典型烘焙时长</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 02 目录地图 ========== -->
+<section class="section" style="background: var(--cream-dark);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">目录</div>
+        <h2 class="section-title">一张"地图"看懂本章</h2>
+        <p class="section-subtitle" style="margin-bottom: 32px;">
+            烘焙知识看着复杂，其实围绕三条主线展开：<strong>化学反应</strong>（味道从哪来）、<strong>烘焙度</strong>（味道到哪去）、<strong>设备与曲线</strong>（怎么控制）。本章按这个顺序推进。
+        </p>
+
+        <div class="toc">
+            <div class="toc-title">本章内容导航</div>
+            <ul class="toc-list">
+                <li><a href="#timeline"><span class="toc-num">1</span>⏱ 十分钟里发生了什么</a></li>
+                <li><a href="#maillard"><span class="toc-num">2</span>🧅 美拉德反应</a></li>
+                <li><a href="#caramelization"><span class="toc-num">3</span>🍯 焦糖化反应</a></li>
+                <li><a href="#cracks"><span class="toc-num">4</span>💥 一爆与二爆</a></li>
+                <li><a href="#roast-levels"><span class="toc-num">5</span>🎨 烘焙度光谱</a></li>
+                <li><a href="#quick-compare"><span class="toc-num">6</span>📊 一图看懂对比</a></li>
+                <li><a href="#machines"><span class="toc-num">7</span>⚙️ 烘焙机三大流派</a></li>
+                <li><a href="#profile"><span class="toc-num">8</span>📈 烘焙曲线与 RoR</a></li>
+            </ul>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <div class="info-card accent-orange">
+                <div class="info-label">主线一</div>
+                <h4>化学反应</h4>
+                <p>美拉德反应、焦糖化、斯特雷克降解——咖啡香气的三大"车间"，决定味道从哪来。</p>
+            </div>
+            <div class="info-card accent-blue">
+                <div class="info-label">主线二</div>
+                <h4>烘焙度</h4>
+                <p>浅烘、中烘、深烘不只是颜色深浅，而是三套完全不同的风味取向与冲煮适配。</p>
+            </div>
+            <div class="info-card accent-violet">
+                <div class="info-label">主线三</div>
+                <h4>设备与曲线</h4>
+                <p>直火、热风、半热风三大流派，加上烘焙曲线与 RoR——烘焙师手里的"方向盘"。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 03 时间线 ========== -->
+<section class="section" id="timeline">
+    <div class="container-narrow">
+        <div class="section-eyebrow">时间线</div>
+        <h2 class="section-title">十分钟里，锅里到底发生了什么？</h2>
+        <div class="prose">
+            <p>把一锅中烘放慢看，其实是六幕连续剧。<strong>装豆后约 1 分钟，豆温触底回升</strong>——这个低点叫<strong>回温点（Turnaround）</strong>，是整条烘焙曲线的起跑线。随后进入<strong>脱水期</strong>：豆内约 10–12% 的水分被蒸发，豆色由青绿转淡黄，闻起来还是"草味"。</p>
+            <p>真正的转折在 <strong>150°C</strong> 之后：美拉德反应启动，香气从"草"转向"烤面包"；当豆温抵达 <strong>196–205°C</strong>，豆内积蓄的水汽与 CO₂ 冲破细胞壁，发出标志性的"一爆"。一爆之后到出炉，称为<strong>发展期</strong>——甜感与干净度在这里定型；若继续推向 <strong>224–230°C</strong>，则进入二爆的深烘领域。出炉后必须立刻风冷，否则余温会让反应继续"过火"。</p>
+        </div>
+
+        <div class="process-flow">
+            <div class="flow-title">烘焙全流程 · 典型中烘参考</div>
+            <div class="process-grid">
+                <div class="process-step"><div class="step-icon">📦</div><div class="step-name">装豆回温</div><div class="step-note">约 1 分钟 · 回温点</div></div>
+                <div class="process-step"><div class="step-icon">💧</div><div class="step-name">脱水期</div><div class="step-note">0–4 分钟 · 草青味</div></div>
+                <div class="process-step highlight-step"><div class="step-icon">🟡</div><div class="step-name">变黄期</div><div class="step-note">>150°C · 美拉德启动</div></div>
+                <div class="process-step highlight-step"><div class="step-icon">💥</div><div class="step-name">一爆</div><div class="step-note">196–205°C · 浅中分界</div></div>
+                <div class="process-step"><div class="step-icon">⏳</div><div class="step-name">发展期</div><div class="step-note">一爆后 · DTR 18–25%</div></div>
+                <div class="process-step"><div class="step-icon">❄️</div><div class="step-name">二爆→冷却</div><div class="step-note">224–230°C · 深烘领域</div></div>
+            </div>
+            <div class="flow-footer">💡 温度区间为常见参考值 · 实际因锅炉、豆密度与火力策略浮动</div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 04 美拉德反应 ========== -->
+<section class="section" id="maillard" style="background: var(--cream-dark);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">化学反应 · 核心</div>
+        <h2 class="section-title">美拉德反应：咖啡香气的总开关</h2>
+
+        <div class="prose">
+            <p><strong>美拉德反应（Maillard Reaction）</strong>，名字来自 1912 年首次描述它的法国化学家美拉德。它的配方简单到只有两样东西：<strong>氨基酸</strong>和<strong>还原糖</strong>——恰好咖啡豆里都有。当豆温升到约 <span style="background: #fde68a; padding: 2px 6px; border-radius: 4px;">140–165°C</span>，这两类分子开始连锁结合，生成成百上千种新的香气与色素分子。</p>
+            <p>这一反应最标志性的产物是<strong>类黑精（Melanoidins）</strong>：它既给熟豆上"棕色"，也承载大量风味物质，还是咖啡醇厚度（body）的重要来源。你熟悉的<strong>烤面包、坚果、麦芽、焦糖饼干</strong>这些"棕色系"香气，主力都来自美拉德反应。</p>
+            <p>值得一提的是美拉德的一条"支线"——<strong>斯特雷克降解（Strecker Degradation）</strong>：氨基酸在反应中进一步分解，生成各类醛类分子，为烘焙香气添上麦芽、谷物、杏仁这些"细碎的层次"。主线负责上色给底味，支线负责点缀——两层合起来，撑起了烘焙香气的大半边天。</p>
+        </div>
+
+        <figure class="method-figure">
+            <img src="assets/img/roast-maillard-curve.jpg" alt="烘焙温度曲线示意图：脱水、美拉德、发展、二爆四个阶段" loading="lazy" onerror="this.closest('figure').style.display='none'">
+            <figcaption>📈 烘焙温度曲线 · Roast Profile（示意图）</figcaption>
+        </figure>
+
+        <div class="info-pair">
+            <div class="info-card accent-violet">
+                <div class="info-label">✅ 什么时候启动</div>
+                <h4>140–165°C，脱水期结束后</h4>
+                <p style="margin: 0;">豆温约 140–165°C 起明显进行，一直延续到出炉。脱水期一结束，它就是锅里的"主旋律"。</p>
+            </div>
+            <div class="info-card accent-rose">
+                <div class="info-label">⚠️ 和焦糖化的区别</div>
+                <h4>一个有"氮"参与，一个没有</h4>
+                <p style="margin: 0;">美拉德 = <strong>氨基酸 + 糖</strong>；焦糖化 = <strong>糖单独受热</strong>。参与者不同，风味气质也截然不同——这就是两者分工的根源。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 05 焦糖化 ========== -->
+<section class="section" id="caramelization">
+    <div class="container-narrow">
+        <div class="section-eyebrow">化学反应</div>
+        <h2 class="section-title">焦糖化：甜感的雕刻刀</h2>
+
+        <div class="prose">
+            <p>豆温爬过约 <span style="background: #fed7aa; padding: 2px 6px; border-radius: 4px;">170°C</span> 后，另一条独立的反应线开始发力：<strong>焦糖化（Caramelization）</strong>。糖（以蔗糖为主）在高温下脱水、聚合、重组，生成焦糖色素与一系列甜香分子——太妃糖、焦糖、蜂蜜的气息，就是这一步给的。</p>
+            <p>焦糖化和美拉德是<strong>接力关系</strong>，不是二选一：脱水期结束时美拉德先"开路"，豆温继续攀升后焦糖化"接棒"。两条线在发展期里同时推进、互相交织——美拉德给底味和醇厚，焦糖化给甜感和光泽。</p>
+            <p>但甜感有窗口期：<strong>烘得越深，糖被消耗得越多</strong>。浅烘时糖分保留多、酸感明亮；深烘时糖几乎烧尽，只剩苦、烟熏与炭化气息。所谓"把甜烘进豆子里"，本质是让焦糖化停在恰到好处的位置。</p>
+        </div>
+
+        <div class="info-pair">
+            <div class="info-card accent-orange">
+                <div class="info-label">🍯 焦糖化的代表作</div>
+                <h4>太妃糖 · 焦糖 · 蜂蜜</h4>
+                <p style="margin: 0;">中烘豆的"甜"主要来自这里——这也是中烘能成为精品主流的化学原因。</p>
+            </div>
+            <div class="info-card accent-rose">
+                <div class="info-label">⚠️ 过头的代价</div>
+                <h4>甜感退场，苦感接管</h4>
+                <p style="margin: 0;">焦糖化越界就走向炭化。深烘的"苦"不是失误，是化学反应走到尽头的自然结果。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 06 一爆与二爆 ========== -->
+<section class="section" id="cracks" style="background: var(--cream-dark);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">关键时刻</div>
+        <h2 class="section-title">一爆与二爆：烘焙师的"闹钟"</h2>
+
+        <div class="prose">
+            <p>烘焙师盯温度、盯颜色，但真正指挥出炉时机的，是<strong>耳朵</strong>。咖啡豆在受热过程中会经历两次标志性的"爆裂"，它们是锅内的两个物理事件，也是烘焙度的两道分水岭。</p>
+            <p><strong>一爆（First Crack）</strong>发生在约 196–205°C：豆内积蓄的水汽和 CO₂ 冲破细胞壁，发出类似爆米花的清脆声响。一爆之后，豆体第一次"透气"，风味发展进入快车道——<strong>浅烘到中烘的一切出品，基本都落在一爆之后的窗口里</strong>。</p>
+            <p><strong>二爆（Second Crack）</strong>发生在约 224–230°C：细胞壁的纤维结构开始断裂，豆内油脂被推到表面，豆色转为深棕近黑，烟熏感和苦感陡然上升——这是深烘与意式烘焙的领地。多数精品咖啡在一爆到二爆之间收尾，二爆之后继续烘，产区风味会迅速被"烘焙味"覆盖。</p>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-num">196–205<span style="font-size: 22px;">°C</span></div>
+                <div class="stat-label">一爆 First Crack · 浅/中烘分界</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">224–230<span style="font-size: 22px;">°C</span></div>
+                <div class="stat-label">二爆 Second Crack · 深烘领域</div>
+            </div>
+        </div>
+
+        <div class="method-tip">
+            <strong>小贴士：</strong>一爆的声音有节奏——先稀疏、再密集、后稀疏。烘焙师常以"一爆开始后第几秒"来计算发展时间；听爆裂比看温度计更早一步预判风味走向。下次买豆时留意包装上的"一爆后 X 分钟出炉"，那是一份浓缩的烘焙哲学。
+        </div>
+    </div>
+</section>
+
+<!-- ========== 07 烘焙度光谱 ========== -->
+<section class="section" id="roast-levels">
+    <div class="container-narrow">
+        <div class="section-eyebrow">烘焙度</div>
+        <h2 class="section-title">浅、中、深：三套风味逻辑</h2>
+
+        <div class="prose">
+            <p>烘焙度最直观的衡量工具是 <strong>Agtron 色值</strong>：用红外仪器测量豆面反射率，数值越大越浅、越小越深。日常选购不必背数字，记住三条规律就够：<strong>越浅越酸、越深越苦；浅烘讲产地，深烘讲烘焙；中烘找平衡。</strong></p>
+            <p>老派烘焙业还有一套以城市命名的行话：<strong>City Roast</strong>（城市烘，中偏浅）、<strong>Full City</strong>（全城市烘，中偏深）、<strong>French Roast</strong>（法式，深）、<strong>Italian Roast</strong>（意式，极深）。看到这些词，你就知道这袋豆站在光谱的哪一端。</p>
+        </div>
+
+        <figure class="method-figure">
+            <img src="assets/img/roast-beans-compare.jpg" alt="浅烘、中烘、深烘咖啡豆颜色对比示意" loading="lazy" onerror="this.closest('figure').style.display='none'">
+            <figcaption>🎨 三种烘焙度豆色对比 · Agtron 参考区间</figcaption>
+        </figure>
+
+        <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <div class="info-card accent-blue">
+                <div class="info-label">浅烘 · LIGHT</div>
+                <h4>花果与酸香的舞台</h4>
+                <p>Agtron 约 65–80。花果香、柑橘酸质、茶感突出，最接近产地的"风土本色"。<br><strong>适合：</strong>手冲、虹吸<br><strong>代表：</strong>埃塞俄比亚、肯尼亚、云南精品</p>
+            </div>
+            <div class="info-card accent-orange">
+                <div class="info-label">中烘 · MEDIUM</div>
+                <h4>甜感与平衡的主场</h4>
+                <p>Agtron 约 45–60。焦糖、坚果、均衡圆润，酸苦两端的中间点。<br><strong>适合：</strong>手冲、法压、入门全能<br><strong>代表：</strong>哥伦比亚、危地马拉、巴西</p>
+            </div>
+            <div class="info-card" style="border-left-color: #94a3b8;">
+                <div class="info-label">深烘 · DARK</div>
+                <h4>醇厚与烟熏的力量感</h4>
+                <p>Agtron 约 25–40。黑巧克力、烟熏、焦糖苦韵，body 厚重。<br><strong>适合：</strong>意式浓缩、摩卡壶、加奶<br><strong>代表：</strong>曼特宁、意式拼配、传统深烘</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 08 一图看懂对比 ========== -->
+<section class="section" id="quick-compare" style="background: var(--bean-dark); color: var(--cream);">
+    <div class="container-narrow">
+        <div class="text-center" style="margin-bottom: 56px;">
+            <div class="section-eyebrow" style="color: var(--cream-dark); opacity: 0.6;">QUICK COMPARE</div>
+            <h2 class="section-title" style="color: var(--cream);">一图看懂</h2>
+            <p style="color: var(--cream-dark); margin-top: 12px; opacity: 0.7;">三种烘焙度的核心差异速查</p>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table class="compare-table" style="background: rgba(255,255,255,0.06); color: var(--cream); min-width: 720px;">
+                <thead>
+                    <tr style="background: rgba(255,255,255,0.1);">
+                        <th>烘焙度</th>
+                        <th>Agtron</th>
+                        <th>豆色</th>
+                        <th>酸度</th>
+                        <th>苦度</th>
+                        <th>醇厚度</th>
+                        <th>典型风味</th>
+                        <th>适合冲煮 · 代表产地</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🟡 浅烘</td>
+                        <td>65–80</td>
+                        <td>浅肉桂色</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐</td>
+                        <td>⭐⭐</td>
+                        <td>花果、柑橘、茶感</td>
+                        <td>手冲 · 埃塞 / 肯尼亚 / 云南</td>
+                    </tr>
+                    <tr>
+                        <td>🟠 中烘</td>
+                        <td>45–60</td>
+                        <td>焦糖棕</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>焦糖、坚果、平衡</td>
+                        <td>手冲 / 法压 · 哥伦比亚 / 巴西</td>
+                    </tr>
+                    <tr>
+                        <td>🟤 深烘</td>
+                        <td>25–40</td>
+                        <td>深棕近黑</td>
+                        <td>⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>黑巧、烟熏、焦糖苦韵</td>
+                        <td>意式 / 摩卡壶 · 曼特宁 / 意式拼配</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 09 烘焙机三大流派 ========== -->
+<section class="section" id="machines">
+    <div class="container-narrow">
+        <div class="section-eyebrow">设备</div>
+        <h2 class="section-title">烘焙机三大流派：火、风、火+风</h2>
+
+        <div class="prose">
+            <p>同样的豆、同样的曲线，换一台烘焙机，出来的味道可能判若两豆。按热量传递方式，烘焙机基本分成三个流派——它们的差异，本质上就是"豆子靠什么受热"。</p>
+        </div>
+
+        <figure class="method-figure">
+            <img src="assets/img/roast-machine-anatomy.jpg" alt="直火、热风、半热风三种烘焙机工作原理示意" loading="lazy" onerror="this.closest('figure').style.display='none'">
+            <figcaption>⚙️ 三大烘焙机流派 · 热量传递方式示意</figcaption>
+        </figure>
+
+        <div class="niche-grid">
+            <div class="niche-card">
+                <div class="niche-header">🔥 直火式 <span class="niche-en">Direct-Fire</span></div>
+                <p>明火直接烧滚筒外壁，豆子靠金属传导受热。风味带着标志性的烟火气与厚重感，是老派深烘的浪漫。代价是火力控制难、豆子易灼伤，均匀度依赖烘焙师手感。</p>
+            </div>
+            <div class="niche-card">
+                <div class="niche-header">💨 热风式（流化床） <span class="niche-en">Fluid-Bed / Hot-Air</span></div>
+                <p>热风从底部吹入，豆粒像在热气流里"沸腾"，几乎不接触金属。受热极其均匀，风味干净明亮、酸质通透。缺点是醇厚度偏轻、火力惯性小，适合突出细腻风味的浅烘。</p>
+            </div>
+            <div class="niche-card">
+                <div class="niche-header">⚙️ 半热风式 <span class="niche-en">Semi-Direct / Drum</span></div>
+                <p>滚筒传导为主、循环热风为辅，兼顾 body 与干净度。当代精品烘焙机的绝对主流——Probat、Diedrich 等经典品牌都属于这一系。如果你喝的精品豆多半出自它。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 10 烘焙曲线 ========== -->
+<section class="section" id="profile" style="background: var(--cream-dark);">
+    <div class="container-narrow">
+        <div class="section-eyebrow">数据化</div>
+        <h2 class="section-title">烘焙曲线：把风味写进坐标系</h2>
+
+        <div class="prose">
+            <p>烘焙师口中的"<strong>烘焙曲线（Roast Profile）</strong>"，是豆温随时间变化的轨迹。它就像一份菜谱：同一支豆子想复刻上周的味道，靠的就是对着曲线逐分钟校准火力。</p>
+            <p>曲线健康与否，看两个指标。一是 <strong>RoR（Rate of Rise，升温速率）</strong>：豆温每分钟爬升的幅度，理想状态是<strong>平滑递减</strong>——RoR 骤降意味着烘焙"卡住"（风味发展停滞），骤升则说明火力过猛。二是 <strong>DTR（发展时间比率）</strong>：一爆到出炉的时间占全程的比例，通常落在 <span style="background: #bae6fd; padding: 2px 6px; border-radius: 4px;">18–25%</span>。太短甜感没长开，太长则向苦与烟熏漂移。</p>
+        </div>
+
+        <div class="method-tip">
+            <strong>小贴士：</strong>想体验"曲线"的力量，最简单的办法是买同一支豆子的两种烘焙度各一包，隔天各冲一杯对比——你会喝出两条曲线、两种化学路径的差别，比任何文章都直观。
+        </div>
+    </div>
+</section>
+
+<!-- ========== 11 进阶小贴士 ========== -->
+<section class="section">
+    <div class="container-narrow">
+        <div class="section-eyebrow">进阶</div>
+        <h2 class="section-title">读懂包装上的"烘焙"</h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+            <div class="info-card accent-orange">
+                <div style="font-size: 28px; margin-bottom: 8px;">📅</div>
+                <h4>看烘焙日期，不看保质期</h4>
+                <p>咖啡豆真正的"新鲜窗口"以烘焙日计算，不是保质期。货架上的"12 个月保质期"和风味无关——找包装上那行 <span style="font-family: monospace; background: var(--cream-dark); padding: 2px 6px; border-radius: 4px;">Roasted on / 烘焙日期</span>。</p>
+            </div>
+            <div class="info-card accent-blue">
+                <div style="font-size: 28px; margin-bottom: 8px;">⏳</div>
+                <h4>养豆期：给豆子喘口气</h4>
+                <p>刚出炉的豆子持续排出 CO₂，风味尚未稳定。<strong>养豆（Resting）</strong>一般 3–30 天：手冲浅中烘建议养 5–14 天，意式深烘可养到 10–30 天。太新鲜的豆子冲煮时排气汹涌，萃取反而不稳。</p>
+            </div>
+            <div class="info-card accent-violet">
+                <div style="font-size: 28px; margin-bottom: 8px;">🆚</div>
+                <h4>同一支豆，两种烘焙度</h4>
+                <p>不少烘焙商提供同产地不同烘焙度的组合。这是理解本章最短的路：同一路生豆，浅烘喝产地、深烘喝烘焙，一对比，"烘焙决定什么"就不言自明。</p>
+            </div>
+            <div class="info-card accent-emerald">
+                <div style="font-size: 28px; margin-bottom: 8px;">🎯</div>
+                <h4>新手从哪一档入手？</h4>
+                <p><strong>中烘</strong>。它处在酸苦两端的中间点，容错率高、配什么冲法都不难喝；等喝出偏好，再向浅（追果酸）或深（追醇厚）两端探索。</p>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="flavor.html" class="btn btn-primary">下一章：咖啡风味 →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h5>☕ 咖啡科普小站</h5>
+                <p style="color: rgba(250,245,236,0.6); line-height: 1.7; margin: 0;">
+                    处理法 · 烘焙 · 风味 · 豆种 · 冲泡 · 产区<br>
+                    一杯咖啡的六段式入门。
+                </p>
+            </div>
+            <div>
+                <h5>CH · 六个章节</h5>
+                <a href="processing.html">01 处理法</a>
+                <a href="roasting.html">02 烘焙</a>
+                <a href="flavor.html">03 风味</a>
+                <a href="varieties.html">04 豆种</a>
+                <a href="brewing.html">05 冲泡</a>
+                <a href="origins.html">06 产区</a>
+            </div>
+            <div>
+                <h5>SITE</h5>
+                <a href="index.html#about">关于本站</a>
+                <a href="index.html#contact">联系作者</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 王培鑫 · 咖啡科普小站</span>
+            <span>用一杯咖啡的时间，读懂一杯咖啡</span>
+        </div>
+    </div>
+</footer>
+
+<!-- 评论区：Giscus（基于 GitHub Discussions）-->
+<section class="comments-section" aria-label="评论区">
+    <div class="comments-container">
+        <h2 class="comments-title">💬 评论区</h2>
+        <p class="comments-hint">在 GitHub Discussions 留言讨论 · 无需登录，登录 GitHub 账号即可评论 · <a href="https://github.com/wangpeixin4444-code/basiccoffee/discussions" target="_blank" rel="noopener">查看历史讨论</a></p>
+        <div id="comments-mount"></div>
+        <script src="https://giscus.app/client.js"
+            data-repo="wangpeixin4444-code/basiccoffee"
+            data-repo-id="R_kgDOUSZH2Q"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOUSZH2c4DFbEl"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+</section>
+
+</body>
+</html>
