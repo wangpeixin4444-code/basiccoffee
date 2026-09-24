@@ -74,7 +74,18 @@ h1, h2, h3, h4 {
     display: flex;
     gap: 4px;
     align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.25) transparent;
+    -webkit-overflow-scrolling: touch;
 }
+.site-nav .nav-links::-webkit-scrollbar { height: 4px; }
+.site-nav .nav-links::-webkit-scrollbar-track { background: transparent; }
+.site-nav .nav-links::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+.site-nav .nav-links::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.35); }
 
 .site-nav .nav-link {
     color: var(--cream-dark);
@@ -84,6 +95,7 @@ h1, h2, h3, h4 {
     font-size: 14px;
     transition: all 0.2s ease;
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .site-nav .nav-link:hover {
@@ -1481,13 +1493,13 @@ h1, h2, h3, h4 {
 }
 
 /* ===========================================
-   五章节导航适配（更多链接）
+   六章节导航适配（更多链接 + 可滑动）
    =========================================== */
 @media (max-width: 768px) {
     .site-nav { padding: 12px 0; }
     .site-nav .nav-inner {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         gap: 10px;
     }
     .site-nav .brand {
@@ -1500,12 +1512,9 @@ h1, h2, h3, h4 {
     }
     .site-nav .nav-links {
         width: 100%;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        justify-content: center;
-        padding-bottom: 2px;
+        justify-content: flex-start;
+        padding: 0 4px 4px;
     }
-    .site-nav .nav-link { white-space: nowrap; }
 }
 
 /* ===== 评论区（Giscus） ===== */
