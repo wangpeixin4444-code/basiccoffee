@@ -247,6 +247,7 @@ h1, h2, h3, h4 {
 .entry-card .visual-varieties { background: linear-gradient(135deg, #bbf7d0, #22c55e); }
 .entry-card .visual-brewing { background: linear-gradient(135deg, #bae6fd, #0ea5e9); }
 .entry-card .visual-origins { background: linear-gradient(135deg, #fde68a, #f59e0b); }
+.entry-card .visual-roasting { background: linear-gradient(135deg, #fecaca, #dc2626); }
 
 .entry-card .card-body {
     padding: 28px;
