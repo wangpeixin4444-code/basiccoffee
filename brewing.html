@@ -525,13 +525,22 @@
 </section>
 
 <script>
-/* 导航栏默认只露出前 5 个链接，当前页的链接若在视野外则自动滑入 */
+/* 导航栏以「风味」为中心，可左右滑动；当前页链接若在视野外则改为居中它 */
 (function () {
     var links = document.querySelector('.site-nav .nav-links');
     if (!links) return;
+    function center(el) {
+        links.scrollLeft = (el.offsetLeft - links.offsetLeft) + el.offsetWidth / 2 - links.clientWidth / 2;
+    }
+    var flavor = links.querySelector('a[href="flavor.html"]');
     var active = links.querySelector('.nav-link.active');
-    if (active && links.scrollWidth > links.clientWidth) {
-        active.scrollIntoView({ inline: 'center', block: 'nearest' });
+    if (flavor) center(flavor);
+    if (active) {
+        var left = active.offsetLeft - links.offsetLeft;
+        var right = left + active.offsetWidth;
+        if (left < links.scrollLeft + 8 || right > links.scrollLeft + links.clientWidth - 8) {
+            center(active);
+        }
     }
 })();
 </script>

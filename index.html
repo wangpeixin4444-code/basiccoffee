@@ -278,7 +278,7 @@
                 <h3>更新与维护</h3>
                 <p>
                     <strong>v2.0.2</strong> · 2026-09-28<br>
-                    <strong>导航栏精简：</strong>顶部导航默认只显示前 5 个入口（首页/处理法/烘焙/风味/豆种），「冲泡」「产区」通过横向滑动展开——导航不再占据过多横向空间；并加入智能定位脚本：若当前页面的链接在视野外（如冲泡、产区页），会自动滑入视野高亮，不会"迷路"。
+                    <strong>导航栏居中对称设计：</strong>顶部导航<strong>严格居于页面水平中心线</strong>（左右对称网格布局），滑动栏默认以<strong>「风味」为中心</strong>——左侧可滑出首页/处理法，右侧可滑出冲泡/产区，视野始终保持 5 个入口；若当前页面链接在视野外（如产区页），会自动改为居中该链接，不会"迷路"。
                 </p>
                 <p>
                     <strong>v2.0.1</strong> · 2026-09-24<br>
@@ -398,13 +398,22 @@
 </section>
 
 <script>
-/* 导航栏默认只露出前 5 个链接，当前页的链接若在视野外则自动滑入 */
+/* 导航栏以「风味」为中心，可左右滑动；当前页链接若在视野外则改为居中它 */
 (function () {
     var links = document.querySelector('.site-nav .nav-links');
     if (!links) return;
+    function center(el) {
+        links.scrollLeft = (el.offsetLeft - links.offsetLeft) + el.offsetWidth / 2 - links.clientWidth / 2;
+    }
+    var flavor = links.querySelector('a[href="flavor.html"]');
     var active = links.querySelector('.nav-link.active');
-    if (active && links.scrollWidth > links.clientWidth) {
-        active.scrollIntoView({ inline: 'center', block: 'nearest' });
+    if (flavor) center(flavor);
+    if (active) {
+        var left = active.offsetLeft - links.offsetLeft;
+        var right = left + active.offsetWidth;
+        if (left < links.scrollLeft + 8 || right > links.scrollLeft + links.clientWidth - 8) {
+            center(active);
+        }
     }
 })();
 </script>

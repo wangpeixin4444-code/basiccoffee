@@ -50,9 +50,10 @@ h1, h2, h3, h4 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-    display: flex;
+    /* 三列网格：brand 靠左、导航栏严格居于页面中心线（左右各留 1fr 对称占位） */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     gap: 16px;
 }
 
@@ -1513,6 +1514,8 @@ h1, h2, h3, h4 {
     }
     .site-nav .nav-links {
         width: 100%;
+        max-width: 288px;
+        margin: 0 auto;
         justify-content: flex-start;
         padding: 0 4px 4px;
     }
