@@ -50,11 +50,11 @@ h1, h2, h3, h4 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-    /* 三列网格：brand 靠左、导航栏严格居于页面中心线（左右各留 1fr 对称占位） */
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    /* 上下堆叠：品牌居中在上、导航居中在下，两层对称 */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
 }
 
 .site-nav .brand {
@@ -67,6 +67,9 @@ h1, h2, h3, h4 {
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 0.5px;
+    justify-content: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .site-nav .brand-icon { font-size: 22px; }
@@ -1495,29 +1498,13 @@ h1, h2, h3, h4 {
 }
 
 /* ===========================================
-   六章节导航适配（更多链接 + 可滑动）
+   移动端微调（基础样式已为居中堆叠）
    =========================================== */
 @media (max-width: 768px) {
     .site-nav { padding: 12px 0; }
-    .site-nav .nav-inner {
-        display: flex; /* 覆盖桌面的 grid 布局，恢复上下堆叠 */
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
-    }
-    .site-nav .brand {
-        font-size: 18px;
-        letter-spacing: 1px;
-        justify-content: center;
-        width: 100%;
-        padding-bottom: 4px;
-        border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
+    .site-nav .brand { letter-spacing: 1px; }
     .site-nav .nav-links {
-        width: 100%;
         max-width: 288px;
-        margin: 0 auto;
-        justify-content: flex-start;
         padding: 0 4px 4px;
     }
 }
