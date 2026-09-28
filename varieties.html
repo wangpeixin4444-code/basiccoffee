@@ -492,14 +492,14 @@
 </section>
 
 <script>
-/* 导航栏以「风味」为中心，可左右滑动；当前页链接若在视野外则改为居中它 */
+/* 导航栏以「首页」为中心，可左右滑动；当前页链接若在视野外则改为居中它 */
 (function () {
     var links = document.querySelector('.site-nav .nav-links');
     if (!links) return;
     function center(el) {
         links.scrollLeft = (el.offsetLeft - links.offsetLeft) + el.offsetWidth / 2 - links.clientWidth / 2;
     }
-    var flavor = links.querySelector('a[href="flavor.html"]');
+    var home = links.querySelector('a[href="index.html"]');
     var active = links.querySelector('.nav-link.active');
     if (flavor) center(flavor);
     if (active) {
