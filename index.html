@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="三分钟入门，从一颗果实到一杯咖啡">
     <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=1.9">
+    <link rel="stylesheet" href="assets/style.css?v=2.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -277,6 +277,10 @@
                 <div class="about-icon">🕐</div>
                 <h3>更新与维护</h3>
                 <p>
+                    <strong>v2.0.2</strong> · 2026-09-28<br>
+                    <strong>导航栏精简：</strong>顶部导航默认只显示前 5 个入口（首页/处理法/烘焙/风味/豆种），「冲泡」「产区」通过横向滑动展开——导航不再占据过多横向空间；并加入智能定位脚本：若当前页面的链接在视野外（如冲泡、产区页），会自动滑入视野高亮，不会"迷路"。
+                </p>
+                <p>
                     <strong>v2.0.1</strong> · 2026-09-24<br>
                     <strong>导航与文案收尾：</strong>顶部导航栏改为可横向<strong>滑动式</strong>（桌面端与移动端均支持，scrollbar 细化为 4px 高度、深色描边色 hover 加深），7 个链接不再撑爆容器；章号措辞统一为「六个章节」（首页 hero-meta、EXPLORE eyebrow、首页/各页 footer 同步）；4 个子页（flavor/varieties/brewing/origins）的面包屑章号同步到新编号；README.md 同步 6 章结构并移除明文手机号（隐私升级）。
                 </p>
@@ -392,6 +396,18 @@
         </script>
     </div>
 </section>
+
+<script>
+/* 导航栏默认只露出前 5 个链接，当前页的链接若在视野外则自动滑入 */
+(function () {
+    var links = document.querySelector('.site-nav .nav-links');
+    if (!links) return;
+    var active = links.querySelector('.nav-link.active');
+    if (active && links.scrollWidth > links.clientWidth) {
+        active.scrollIntoView({ inline: 'center', block: 'nearest' });
+    }
+})();
+</script>
 
 </body>
 </html>

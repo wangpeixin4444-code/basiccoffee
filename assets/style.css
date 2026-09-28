@@ -77,7 +77,8 @@ h1, h2, h3, h4 {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    max-width: 100%;
+    /* 默认只露出前 5 个链接（约 310px），其余通过横向滑动展开 */
+    max-width: 340px;
     scrollbar-width: thin;
     scrollbar-color: rgba(255,255,255,0.25) transparent;
     -webkit-overflow-scrolling: touch;
@@ -109,7 +110,7 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 640px) {
-    .site-nav .nav-links { gap: 2px; }
+    .site-nav .nav-links { gap: 2px; max-width: 288px; }
     .site-nav .nav-link { padding: 6px 10px; font-size: 13px; }
     .site-nav .brand { font-size: 15px; }
 }

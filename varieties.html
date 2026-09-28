@@ -19,7 +19,7 @@
     <meta name="twitter:description" content="阿拉比卡、罗布斯塔、利比里卡 —— 三大原生种以及阿拉比卡下属变种（瑰夏、铁皮卡、波旁等）解析。">
     <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌱%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=1.9">
+    <link rel="stylesheet" href="assets/style.css?v=2.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -490,6 +490,18 @@
         </script>
     </div>
 </section>
+
+<script>
+/* 导航栏默认只露出前 5 个链接，当前页的链接若在视野外则自动滑入 */
+(function () {
+    var links = document.querySelector('.site-nav .nav-links');
+    if (!links) return;
+    var active = links.querySelector('.nav-link.active');
+    if (active && links.scrollWidth > links.clientWidth) {
+        active.scrollIntoView({ inline: 'center', block: 'nearest' });
+    }
+})();
+</script>
 
 </body>
 </html>
