@@ -1500,6 +1500,7 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
     .site-nav { padding: 12px 0; }
     .site-nav .nav-inner {
+        display: flex; /* 覆盖桌面的 grid 布局，恢复上下堆叠 */
         flex-direction: column;
         align-items: stretch;
         gap: 10px;
