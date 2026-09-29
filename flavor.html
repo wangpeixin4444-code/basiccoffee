@@ -564,14 +564,20 @@
     }
     var home = links.querySelector('a[href="index.html"]');
     var active = links.querySelector('.nav-link.active');
-    if (flavor) center(flavor);
-    if (active) {
-        var left = active.offsetLeft - links.offsetLeft;
-        var right = left + active.offsetWidth;
-        if (left < links.scrollLeft + 8 || right > links.scrollLeft + links.clientWidth - 8) {
-            center(active);
+    function run() {
+        if (home) center(home);
+        if (active) {
+            var left = active.offsetLeft - links.offsetLeft;
+            var right = left + active.offsetWidth;
+            if (left < links.scrollLeft + 8 || right > links.scrollLeft + links.clientWidth - 8) {
+                center(active);
+            }
         }
     }
+    run();
+    /* 字体加载完成后宽度会变化，再校准一次 */
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(run); }
+    window.addEventListener('load', run);
 })();
 </script>
 
