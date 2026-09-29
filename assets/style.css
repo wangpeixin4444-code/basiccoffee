@@ -1553,3 +1553,17 @@ h1, h2, h3, h4 {
     #comments-mount { padding: 12px 14px; }
     .comments-title { font-size: 1.3rem; }
 }
+
+/* ===== 烘焙页:深底表格第一列颜色修正 ===== */
+.compare-table.on-dark td:first-child {
+    color: var(--cream);
+}
+
+/* ===== 烘焙页:示意图完整显示(不裁切) ===== */
+.method-figure.figure-natural {
+    aspect-ratio: auto;
+}
+.method-figure.figure-natural img {
+    height: auto;
+    object-fit: contain;
+}
