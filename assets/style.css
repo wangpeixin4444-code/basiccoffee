@@ -1567,3 +1567,27 @@ h1, h2, h3, h4 {
     height: auto;
     object-fit: contain;
 }
+
+/* ===== 访客计数器(不蒜子) ===== */
+.visitor-counter {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(250,245,236,0.45);
+    margin-top: 16px;
+    letter-spacing: 0.05em;
+    font-variant-numeric: tabular-nums;
+}
+.visitor-counter .num {
+    color: rgba(250,245,236,0.75);
+    font-weight: 600;
+    margin: 0 4px;
+}
+.visitor-counter .sep {
+    margin: 0 10px;
+    opacity: 0.4;
+}
+/* busuanzi 脚本未加载/被墙时的兜底 */
+.visitor-counter:not(.ready) .num {
+    color: rgba(250,245,236,0.3);
+    font-style: italic;
+}
