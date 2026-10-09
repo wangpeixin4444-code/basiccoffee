@@ -1591,3 +1591,109 @@ h1, h2, h3, h4 {
     color: rgba(250,245,236,0.3);
     font-style: italic;
 }
+
+
+/* ============================================================
+   部署补丁 v2.4（2026-10-07）
+   ① 替代 Tailwind Play CDN —— 全站只用到下面这 10 个工具类，
+      原先为此加载 398 KB(未压缩) / 102 KB(brotli) 的 JS。
+   ② 补齐 brewing.html / origins.html 使用但样式表里缺失的组件类。
+   ============================================================ */
+
+/* --- ① 原 Tailwind 工具类 --- */
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.gap-4 { gap: 16px; }
+.gap-6 { gap: 24px; }
+.gap-8 { gap: 32px; }
+.mt-8 { margin-top: 32px; }
+
+@media (min-width: 768px) {
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* --- ② 缺失组件：新手推荐卡片 --- */
+.recommend-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .recommend-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.recommend-card {
+    background: #fff;
+    border: 1px solid rgba(164, 113, 72, 0.12);
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recommend-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(58, 36, 24, 0.08);
+}
+
+.recommend-card h3 {
+    margin: 12px 0 8px;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    color: var(--bean-dark);
+}
+
+.recommend-card p {
+    margin: 0 0 16px;
+    color: var(--bean-mid);
+    line-height: 1.75;
+}
+
+.recommend-icon {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.recommend-budget {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--cream-dark);
+    color: var(--bean-dark);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* --- ② 缺失组件：底部 CTA 按钮组 --- */
+.cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1px solid var(--bean-light);
+    border-radius: 10px;
+    color: var(--bean-dark);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-btn:hover {
+    background: var(--bean-light);
+    color: var(--cream);
+}
