@@ -6,11 +6,11 @@
     --bean-dark: #3a2418;
     --bean-darker: #2a1810;
     --bean-mid: #6b4226;
-    --bean-light: #a47148;
+    --bean-light: #8a5a34;
+    --bean-light-ondark: #a47148;
     --bean-pale: #d4b596;
     --cream: #faf5ec;
     --cream-dark: #f0e6d2;
-    --sage: #7c9082;
     --ink: #2a1810;
 }
 
@@ -105,7 +105,7 @@ h1, h2, h3, h4 {
 
 .site-nav .nav-link:hover {
     background: rgba(255,255,255,0.08);
-    color: var(--bean-light);
+    color: var(--bean-light-ondark);
 }
 
 .site-nav .nav-link.active {
@@ -208,7 +208,12 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
-.hero-title .accent { color: var(--bean-light); }
+/* .hero-tag 在深色 hero 上用亮一档的色，在浅色 sub-hero 上沿用主色 */
+.hero .hero-tag {
+    color: var(--bean-light-ondark);
+}
+
+.hero-title .accent { color: var(--bean-light-ondark); }
 
 .hero-desc {
     font-size: clamp(16px, 2vw, 20px);
@@ -383,7 +388,7 @@ h1, h2, h3, h4 {
     transition: color 0.2s ease;
 }
 
-.site-footer a:hover { color: var(--bean-light); }
+.site-footer a:hover { color: var(--bean-light-ondark); }
 
 .site-footer .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -673,6 +678,7 @@ h1, h2, h3, h4 {
     margin-bottom: 8px;
 }
 
+.info-card h3,
 .info-card h4 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -945,6 +951,7 @@ h1, h2, h3, h4 {
     margin-bottom: 12px;
 }
 
+.niche-card h3,
 .niche-card h4 {
     font-size: 18px;
     margin: 0;
@@ -1536,9 +1543,9 @@ h1, h2, h3, h4 {
     line-height: 1.5;
 }
 .comments-hint a {
-    color: var(--bean-medium);
+    color: var(--bean-light);
     text-decoration: none;
-    border-bottom: 1px dashed var(--bean-medium);
+    border-bottom: 1px dashed var(--bean-light);
 }
 .comments-hint a:hover { color: var(--bean-light); }
 #comments-mount {
@@ -1572,7 +1579,7 @@ h1, h2, h3, h4 {
 .visitor-counter {
     text-align: center;
     font-size: 12px;
-    color: rgba(250,245,236,0.45);
+    color: rgba(250,245,236,0.75);
     margin-top: 16px;
     letter-spacing: 0.05em;
     font-variant-numeric: tabular-nums;
@@ -1588,7 +1595,7 @@ h1, h2, h3, h4 {
 }
 /* busuanzi 脚本未加载/被墙时的兜底 */
 .visitor-counter:not(.ready) .num {
-    color: rgba(250,245,236,0.3);
+    color: rgba(250,245,236,0.55);
     font-style: italic;
 }
 
