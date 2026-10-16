@@ -23,12 +23,13 @@
 
 ## 🛠️ 技术栈
 
-- 纯静态 HTML + Tailwind CSS（CDN 引入）
-- 自托管样式：`assets/style.css`
-- 零 JavaScript、零后端
-- 部署目标：Cloudflare Pages / GitHub Pages
-- 评论系统：Giscus（基于 GitHub Discussions）
-- SEO：`sitemap.xml` + `robots.txt` + canonical + OG / Twitter Card
+- 纯静态 HTML + 自托管样式：`assets/style.css`（零构建、无 CSS 框架依赖）
+- 无后端；仅少量内联脚本（导航居中、访客计数兜底）
+- 外部依赖：Giscus 评论区、不蒜子访客计数
+- 部署：Cloudflare Pages（连接 GitHub 仓库自动部署），自定义域 `basiccoffee.cn`
+- 404 兜底：根目录 `404.html`（Cloudflare Pages 无此文件时会退化为 SPA 回退，未知路径返回 200）
+- 安全响应头：根目录 `_headers`
+- SEO：`sitemap.xml` + `robots.txt` + canonical（无扩展名）+ OG / Twitter Card
 
 ## 📝 内容来源与版权
 

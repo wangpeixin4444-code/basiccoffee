@@ -469,8 +469,9 @@
             setTimeout(function () {
                 var pv = document.getElementById('busuanzi_value_site_pv');
                 var uv = document.getElementById('busuanzi_value_site_uv');
-                if (pv && pv.textContent && pv.textContent !== '计算中…') {
-                    pv.parentElement.classList.add('ready');
+                var box = pv && pv.parentElement;
+                if (box && pv.textContent && pv.textContent !== '计算中…' && uv && uv.textContent && uv.textContent !== '计算中…') {
+                    box.classList.add('ready');
                 }
             }, 1200);
         });

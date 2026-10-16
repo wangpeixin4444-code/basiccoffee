@@ -72,7 +72,7 @@
 打开项目目录（Windows 命令提示符或 PowerShell）：
 
 ```bash
-cd "C:\Users\WPXSP\WorkBuddy\2026-09-08-10-29-34\coffee-demo"
+cd "你的本地项目目录"   # 例如 D:\code\basiccoffee
 git init
 git config user.name "你的名字"
 git config user.email "你的邮箱"

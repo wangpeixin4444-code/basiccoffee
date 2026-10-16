@@ -160,7 +160,7 @@ window.addEventListener('load', function () {
         var pv = document.getElementById('busuanzi_value_site_pv');
         var uv = document.getElementById('busuanzi_value_site_uv');
         var box = pv && pv.parentElement;
-        if (box && pv.textContent && pv.textContent !== '计算中…' && uv && uv.textContent !== '计算中…') {
+        if (box && pv.textContent && pv.textContent !== '计算中…' && uv && uv.textContent && uv.textContent !== '计算中…') {
             box.classList.add('ready');
         }
     }, 1200);
