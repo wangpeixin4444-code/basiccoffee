@@ -22,7 +22,7 @@
     <meta name="twitter:description" content="手冲 / 法压 / 意式 / Moka / 虹吸 / 冰滴 / 爱乐压 · 七种主流冲泡方式原理与参数">
     <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💧%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=2.5">
+    <link rel="stylesheet" href="assets/style.css?v=2.6">
     <!-- ========== 结构化数据（JSON-LD）========== -->
     <script type="application/ld+json">
     {
@@ -100,8 +100,10 @@
 </head>
 <body>
 
+
+<a class="skip-link" href="#main">跳到主要内容</a>
 <!-- ========== 顶部导航 ========== -->
-<nav class="site-nav">
+<nav class="site-nav" aria-label="站点导航">
     <div class="nav-inner">
         <a href="index.html" class="brand">
             <span class="brand-icon">☕</span>
@@ -113,11 +115,13 @@
             <a href="roasting.html" class="nav-link">烘焙</a>
             <a href="index.html" class="nav-link">首页</a>
             <a href="varieties.html" class="nav-link">豆种</a>
-            <a href="brewing.html" class="nav-link active">冲泡</a>
+            <a href="brewing.html" class="nav-link active" aria-current="page">冲泡</a>
             <a href="origins.html" class="nav-link">产区</a>
         </div>
     </div>
 </nav>
+
+<main id="main">
 
 <!-- ========== 面包屑 ========== -->
 <div class="breadcrumb">
@@ -398,15 +402,16 @@
 
         <div class="compare-table-wrap">
             <table class="compare-table">
+            <caption class="sr-only">七种冲泡方式速查表</caption>
                 <thead>
                     <tr>
-                        <th>方式</th>
-                        <th>类型</th>
-                        <th>水温</th>
-                        <th>研磨度</th>
-                        <th>时间</th>
-                        <th>上手难度</th>
-                        <th>口感关键词</th>
+                        <th scope="col">方式</th>
+                        <th scope="col">类型</th>
+                        <th scope="col">水温</th>
+                        <th scope="col">研磨度</th>
+                        <th scope="col">时间</th>
+                        <th scope="col">上手难度</th>
+                        <th scope="col">口感关键词</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -542,6 +547,8 @@
 </section>
 
 <!-- ========== Footer ========== -->
+</main>
+
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">

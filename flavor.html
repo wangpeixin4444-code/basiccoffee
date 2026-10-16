@@ -22,7 +22,7 @@
     <meta name="twitter:description" content="从酸甜苦香到风味轮，一份写给咖啡初学者的风味识别框架。">
     <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍓%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=2.5">
+    <link rel="stylesheet" href="assets/style.css?v=2.6">
     <!-- ========== 结构化数据（JSON-LD）========== -->
     <script type="application/ld+json">
     {
@@ -100,15 +100,17 @@
 </head>
 <body>
 
+
+<a class="skip-link" href="#main">跳到主要内容</a>
 <!-- ========== 顶部导航 ========== -->
-<nav class="site-nav">
+<nav class="site-nav" aria-label="站点导航">
     <div class="nav-inner">
         <a href="index.html" class="brand">
             <span class="brand-icon">☕</span>
             <span>咖啡科普小站</span>
         </a>
                 <div class="nav-links">
-            <a href="flavor.html" class="nav-link active">风味</a>
+            <a href="flavor.html" class="nav-link active" aria-current="page">风味</a>
             <a href="processing.html" class="nav-link">处理法</a>
             <a href="roasting.html" class="nav-link">烘焙</a>
             <a href="index.html" class="nav-link">首页</a>
@@ -118,6 +120,8 @@
         </div>
     </div>
 </nav>
+
+<main id="main">
 
 <!-- ========== 面包屑 ========== -->
 <div class="breadcrumb">
@@ -468,6 +472,7 @@
         </div>
 
         <table class="compare-table" style="margin-top: 24px;">
+            <caption class="sr-only">一、旧版 100 分制：你在包装上看到的就是它</caption>
             <thead>
                 <tr>
                     <th scope="col">构成</th>
@@ -495,6 +500,7 @@
         </div>
 
         <table class="compare-table" style="margin-top: 24px;">
+            <caption class="sr-only">一、旧版 100 分制：你在包装上看到的就是它</caption>
             <thead>
                 <tr>
                     <th scope="col">总分区间</th>
@@ -521,6 +527,7 @@
         </div>
 
         <table class="compare-table" style="margin-top: 24px;">
+            <caption class="sr-only">二、SCA 现在用的 CVA：没有总分了</caption>
             <thead>
                 <tr>
                     <th scope="col">评估类型</th>
@@ -653,11 +660,12 @@
         </div>
 
         <table class="compare-table" style="background: rgba(255,255,255,0.06); color: var(--cream);">
+            <caption class="sr-only">风味速查卡</caption>
             <thead style="background: rgba(255,255,255,0.1);">
                 <tr>
-                    <th>维度</th>
-                    <th>正面提示</th>
-                    <th>可能的原因</th>
+                    <th scope="col">维度</th>
+                    <th scope="col">正面提示</th>
+                    <th scope="col">可能的原因</th>
                 </tr>
             </thead>
             <tbody>
@@ -686,6 +694,8 @@
 </section>
 
 <!-- ========== Footer ========== -->
+</main>
+
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">

@@ -22,7 +22,7 @@
     <meta name="twitter:description" content="主流与小众处理法对比：日晒 / 水洗 / 湿刨 / 蜜处理 / 厌氧 / 双重厌氧">
     <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☀️%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=2.5">
+    <link rel="stylesheet" href="assets/style.css?v=2.6">
     <!-- ========== 结构化数据（JSON-LD）========== -->
     <script type="application/ld+json">
     {
@@ -100,8 +100,10 @@
 </head>
 <body>
 
+
+<a class="skip-link" href="#main">跳到主要内容</a>
 <!-- ========== 顶部导航 ========== -->
-<nav class="site-nav">
+<nav class="site-nav" aria-label="站点导航">
     <div class="nav-inner">
         <a href="index.html" class="brand">
             <span class="brand-icon">☕</span>
@@ -109,7 +111,7 @@
         </a>
                 <div class="nav-links">
             <a href="flavor.html" class="nav-link">风味</a>
-            <a href="processing.html" class="nav-link active">处理法</a>
+            <a href="processing.html" class="nav-link active" aria-current="page">处理法</a>
             <a href="roasting.html" class="nav-link">烘焙</a>
             <a href="index.html" class="nav-link">首页</a>
             <a href="varieties.html" class="nav-link">豆种</a>
@@ -118,6 +120,8 @@
         </div>
     </div>
 </nav>
+
+<main id="main">
 
 <!-- ========== 面包屑 ========== -->
 <div class="breadcrumb">
@@ -677,16 +681,17 @@
 
         <div style="overflow-x: auto;">
             <table class="compare-table" style="background: rgba(255,255,255,0.06); color: var(--cream); min-width: 720px;">
+            <caption class="sr-only">一图看懂</caption>
                 <thead>
                     <tr style="background: rgba(255,255,255,0.1);">
-                        <th>处理法</th>
-                        <th>去果皮</th>
-                        <th>果胶保留</th>
-                        <th>发酵方式</th>
-                        <th>干燥时长</th>
-                        <th>酸度</th>
-                        <th>醇厚度</th>
-                        <th>典型风味</th>
+                        <th scope="col">处理法</th>
+                        <th scope="col">去果皮</th>
+                        <th scope="col">果胶保留</th>
+                        <th scope="col">发酵方式</th>
+                        <th scope="col">干燥时长</th>
+                        <th scope="col">酸度</th>
+                        <th scope="col">醇厚度</th>
+                        <th scope="col">典型风味</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -792,6 +797,8 @@
 </section>
 
 <!-- ========== Footer ========== -->
+</main>
+
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">

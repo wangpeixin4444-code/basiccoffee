@@ -22,7 +22,7 @@
     <meta name="twitter:description" content="美拉德 / 焦糖化 / 一爆二爆 / 烘焙度光谱 / 三大烘焙机流派 · 咖啡风味的引擎">
     <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔥%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=2.5">
+    <link rel="stylesheet" href="assets/style.css?v=2.6">
     <!-- ========== 结构化数据（JSON-LD）========== -->
     <script type="application/ld+json">
     {
@@ -100,8 +100,10 @@
 </head>
 <body>
 
+
+<a class="skip-link" href="#main">跳到主要内容</a>
 <!-- ========== 顶部导航 ========== -->
-<nav class="site-nav">
+<nav class="site-nav" aria-label="站点导航">
     <div class="nav-inner">
         <a href="index.html" class="brand">
             <span class="brand-icon">☕</span>
@@ -110,7 +112,7 @@
                 <div class="nav-links">
             <a href="flavor.html" class="nav-link">风味</a>
             <a href="processing.html" class="nav-link">处理法</a>
-            <a href="roasting.html" class="nav-link active">烘焙</a>
+            <a href="roasting.html" class="nav-link active" aria-current="page">烘焙</a>
             <a href="index.html" class="nav-link">首页</a>
             <a href="varieties.html" class="nav-link">豆种</a>
             <a href="brewing.html" class="nav-link">冲泡</a>
@@ -118,6 +120,8 @@
         </div>
     </div>
 </nav>
+
+<main id="main">
 
 <!-- ========== 面包屑 ========== -->
 <div class="breadcrumb">
@@ -375,16 +379,17 @@
 
         <div style="overflow-x: auto;">
             <table class="compare-table on-dark" style="background: rgba(255,255,255,0.06); color: var(--cream); min-width: 720px;">
+            <caption class="sr-only">一图看懂</caption>
                 <thead>
                     <tr style="background: rgba(255,255,255,0.1);">
-                        <th>烘焙度</th>
-                        <th>Agtron</th>
-                        <th>豆色</th>
-                        <th>酸度</th>
-                        <th>苦度</th>
-                        <th>醇厚度</th>
-                        <th>典型风味</th>
-                        <th>适合冲煮 · 代表产地</th>
+                        <th scope="col">烘焙度</th>
+                        <th scope="col">Agtron</th>
+                        <th scope="col">豆色</th>
+                        <th scope="col">酸度</th>
+                        <th scope="col">苦度</th>
+                        <th scope="col">醇厚度</th>
+                        <th scope="col">典型风味</th>
+                        <th scope="col">适合冲煮 · 代表产地</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -509,6 +514,8 @@
 </section>
 
 <!-- ========== Footer ========== -->
+</main>
+
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">

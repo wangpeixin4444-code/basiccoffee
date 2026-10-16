@@ -22,7 +22,7 @@
     <meta name="twitter:description" content="阿拉比卡、罗布斯塔、利比里卡 —— 三大商业栽培种，以及阿拉比卡下属品种（瑰夏、铁皮卡、波旁等）解析。">
     <meta name="twitter:image" content="https://basiccoffee.cn/assets/img/og-cover.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌱%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="assets/style.css?v=2.5">
+    <link rel="stylesheet" href="assets/style.css?v=2.6">
     <!-- ========== 结构化数据（JSON-LD）========== -->
     <script type="application/ld+json">
     {
@@ -100,8 +100,10 @@
 </head>
 <body>
 
+
+<a class="skip-link" href="#main">跳到主要内容</a>
 <!-- ========== 顶部导航 ========== -->
-<nav class="site-nav">
+<nav class="site-nav" aria-label="站点导航">
     <div class="nav-inner">
         <a href="index.html" class="brand">
             <span class="brand-icon">☕</span>
@@ -112,12 +114,14 @@
             <a href="processing.html" class="nav-link">处理法</a>
             <a href="roasting.html" class="nav-link">烘焙</a>
             <a href="index.html" class="nav-link">首页</a>
-            <a href="varieties.html" class="nav-link active">豆种</a>
+            <a href="varieties.html" class="nav-link active" aria-current="page">豆种</a>
             <a href="brewing.html" class="nav-link">冲泡</a>
             <a href="origins.html" class="nav-link">产区</a>
         </div>
     </div>
 </nav>
+
+<main id="main">
 
 <!-- ========== 面包屑 ========== -->
 <div class="breadcrumb">
@@ -392,8 +396,9 @@
         </div>
 
         <table class="compare-table" style="margin-top: 40px;">
+            <caption class="sr-only">豆种如何决定风味？</caption>
             <thead>
-                <tr><th>代表豆种</th><th>典型酸质</th><th>典型甜感</th><th>典型香气</th></tr>
+                <tr><th scope="col">代表豆种</th><th scope="col">典型酸质</th><th scope="col">典型甜感</th><th scope="col">典型香气</th></tr>
             </thead>
             <tbody>
                 <tr><td>瑰夏 Geisha</td><td>柑橘 · 苹果</td><td>蜂蜜 · 茶糖</td><td>茉莉 · 佛手柑</td></tr>
@@ -439,12 +444,13 @@
         </div>
 
         <table class="compare-table" style="background: rgba(255,255,255,0.06); color: var(--cream);">
+            <caption class="sr-only">一图看懂三大商业栽培种</caption>
             <thead style="background: rgba(255,255,255,0.1);">
                 <tr>
-                    <th>维度</th>
-                    <th style="color: #86efac;">🌿 阿拉比卡</th>
-                    <th style="color: #fdba74;">🌾 罗布斯塔</th>
-                    <th style="color: #f0abfc;">🌺 利比里卡</th>
+                    <th scope="col">维度</th>
+                    <th scope="col" style="color: #86efac;">🌿 阿拉比卡</th>
+                    <th scope="col" style="color: #fdba74;">🌾 罗布斯塔</th>
+                    <th scope="col" style="color: #f0abfc;">🌺 利比里卡</th>
                 </tr>
             </thead>
             <tbody>
@@ -506,6 +512,8 @@
 </section>
 
 <!-- ========== Footer ========== -->
+</main>
+
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
