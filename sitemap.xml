@@ -2,44 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://basiccoffee.cn/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-16</lastmod>
   </url>
   <url>
     <loc>https://basiccoffee.cn/processing</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-16</lastmod>
   </url>
   <url>
     <loc>https://basiccoffee.cn/roasting</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-16</lastmod>
   </url>
   <url>
     <loc>https://basiccoffee.cn/flavor</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-16</lastmod>
   </url>
   <url>
     <loc>https://basiccoffee.cn/varieties</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-16</lastmod>
   </url>
   <url>
     <loc>https://basiccoffee.cn/brewing</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-16</lastmod>
   </url>
   <url>
     <loc>https://basiccoffee.cn/origins</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-16</lastmod>
   </url>
 </urlset>
