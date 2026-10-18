@@ -371,7 +371,8 @@ h1, h2, h3, h4 {
     }
 }
 
-.site-footer h5 {
+.site-footer h5,
+.site-footer .footer-head {
     color: var(--cream);
     font-size: 14px;
     margin-bottom: 14px;
@@ -1772,4 +1773,148 @@ button:focus-visible,
     .contact-qr-card:hover {
         transform: none;
     }
+}
+
+
+/* ============================================================
+   「产区笔记」列表与卡片 v2.7（2026-10-18）
+   ============================================================ */
+
+.note-list {
+    margin: 40px 0 0;
+    border-top: 1px solid rgba(164,113,72,0.15);
+}
+.note-item {
+    display: block;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(164,113,72,0.15);
+    text-decoration: none;
+    color: inherit;
+    transition: padding-left 0.25s ease, background 0.25s ease;
+}
+.note-item:hover {
+    padding-left: 10px;
+    background: rgba(164,113,72,0.03);
+}
+.note-meta {
+    font-size: 13px;
+    color: var(--bean-light);
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.note-item h3 {
+    font-size: 22px;
+    margin: 0 0 8px;
+    color: var(--bean-dark);
+    line-height: 1.4;
+}
+.note-item p {
+    color: var(--bean-mid);
+    line-height: 1.75;
+    margin: 0;
+    font-size: 16px;
+}
+.note-arrow {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--bean-light);
+    font-weight: 600;
+}
+
+.note-tag {
+    display: inline-block;
+    background: rgba(164,113,72,0.12);
+    color: var(--bean-light);
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* 首页「最新三期」小卡 */
+.note-mini {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid rgba(164,113,72,0.12);
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.note-mini:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(74,48,28,0.12);
+}
+.note-mini h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: var(--bean-dark);
+    line-height: 1.45;
+}
+.note-mini p {
+    font-size: 14px;
+    color: var(--bean-mid);
+    line-height: 1.7;
+    margin: 0;
+}
+.note-mini .note-arrow {
+    margin-top: auto;
+    padding-top: 14px;
+}
+
+/* 笔记页头部的日期行 */
+.note-hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--bean-light);
+    margin-bottom: 14px;
+}
+
+/* 笔记正文里的引用与分隔 */
+.note-body blockquote {
+    margin: 24px 0;
+    padding: 16px 22px;
+    border-left: 3px solid var(--bean-pale);
+    background: var(--cream-dark);
+    border-radius: 0 10px 10px 0;
+    color: var(--bean-dark);
+}
+.note-body hr {
+    border: 0;
+    border-top: 1px solid rgba(164,113,72,0.2);
+    margin: 40px 0;
+}
+.note-body h2 {
+    font-size: 26px;
+    margin: 44px 0 14px;
+    color: var(--bean-dark);
+    line-height: 1.35;
+}
+.note-body h3 {
+    font-size: 21px;
+    margin: 32px 0 12px;
+    color: var(--bean-dark);
+}
+.note-body ul,
+.note-body ol {
+    padding-left: 22px;
+    margin: 16px 0;
+}
+.note-body li {
+    margin: 8px 0;
+}
+
+
+/* footer 栏目名改为无标题语义的元素后，补回块级与间距 */
+.site-footer .footer-head {
+    display: block;
 }

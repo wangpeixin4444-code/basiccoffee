@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>产区笔记 · 咖啡科普小站</title>
+    <link>https://basiccoffee.cn/notes</link>
+    <description>来自产区的观察与记录：品种、处理法、产业与市场。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 18 Oct 2026 14:38:53 GMT</lastBuildDate>
+    <atom:link href="https://basiccoffee.cn/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>卡蒂姆：撑起云南咖啡的那颗豆</title>
+      <link>https://basiccoffee.cn/notes/2026-10-catimor</link>
+      <guid isPermaLink="true">https://basiccoffee.cn/notes/2026-10-catimor</guid>
+      <pubDate>Sun, 18 Oct 2026 01:00:00 GMT</pubDate>
+      <description>它的风味有明确短板，但它接手的是一个正在被叶锈病摧毁的产业。没有它，今天 41.7% 的精品率无从谈起。</description>
+    </item>
+  </channel>
+</rss>
